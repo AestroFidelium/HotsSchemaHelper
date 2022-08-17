@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="Image" name="HealthBarBackgroundTemplate">
+        <RenderPriority val="#RenderPriority_Background" />
+        <Texture val="@UI/StormUnitStatusHealthBarFrame" />
+        <LayerColor val="006edf" />
+        <TextureType val="Nineslice" />
+        <Animation name="BackgroundColor">
+            <Event event="Reset" action="Stop" />
+            <Event event="UnitStatusOwner" action="Stop" frame="$parent" />
+            <Event event="UnitStatusAlly" action="Stop" frame="$parent" />
+            <Event event="UnitStatusEnemy" action="Play" frame="$parent" />
+            <Controller type="LayerColor" end="Pause">
+                <Key type="Curve" time="0" value="223,36,0" inout="Linear" />
+            </Controller>
+        </Animation>
+        <MyTestDeleteNowUsingMultiParms X="55" />
+        <MyTestDeleteNowUsingMultiParms Y="535" />
+        <MyTestDeleteNowUsingMultiParms Z="5353" X="0" />
+        <MyTestDeleteNowUsingMultiParms Z="5353" X="0" />
+        <MyTestDeleteNowUsingMultiParms X="5353" Y="0" Z="111" />
+        <MyTestDeleteNowUsingMultiParms X="5353" Y="0" Z="111">
+            <MyTestDeleteNowUsingMultiParmsWITHIN val="asf" />
+        </MyTestDeleteNowUsingMultiParms>
+        <MyTestDeleteNow val="006edf" />
+        <MySet val="testda" >
+            <MyTestDeleteNow1 val="006edf" />
+            <MyTestDeleteNow1 val="006edf" />
+            <MyTestDeleteNow1 val="006edf" />
+            <MySet2 val="testda" >
+                <MySet3 val="testda" >
+                    <MySet4 val="testda" >
+                        <MySet5 val="testda" >
+                            <MyTestDeleteNow6 val="006edf" />
+                        </MySet5>
+                        <MyTestDeleteNow5 val="006edf" />
+                        <MyTestDeleteNow5 val="006edf" />
+                        <MyTestDeleteNow5 val="006edf" />
+                    </MySet4>
+                </MySet3>
+                <MyTestDeleteNow2 val="006edf" />
+                <MyTestDeleteNow2 val="006edf" />
+                <MyTestDeleteNow2 val="006edf" />
+            </MySet2>
+        </MySet>
+    </Frame>
+</Desc>

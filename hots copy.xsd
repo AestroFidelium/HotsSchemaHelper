@@ -1,0 +1,4784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:element name="Constant">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="name" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="LifeIncreaseDuration"/>
+                <xs:enumeration value="LifeLossDuration"/>
+                <xs:enumeration value="ShieldLossDuration"/>
+                <xs:enumeration value="ReductionColor"/>
+                <xs:enumeration value="DecreaseDuration_NoReduction"/>
+                <xs:enumeration value="LowStatusBarAnnounceThreshold"/>
+                <xs:enumeration value="StasisColor"/>
+                <xs:enumeration value="TimeStopColor"/>
+                <xs:enumeration value="InvulnerableColor"/>
+                <xs:enumeration value="AbsorbingColor"/>
+                <xs:enumeration value="UnstoppableColor"/>
+                <xs:enumeration value="UnkillableColor"/>
+                <xs:enumeration value="ProtectedColor"/>
+                <xs:enumeration value="StunnedColor"/>
+                <xs:enumeration value="RootedColor"/>
+                <xs:enumeration value="PolymorphedColor"/>
+                <xs:enumeration value="MindControlledColor"/>
+                <xs:enumeration value="SleepingColor"/>
+                <xs:enumeration value="FearedColor"/>
+                <xs:enumeration value="TauntedColor"/>
+                <xs:enumeration value="SilencedColor"/>
+                <xs:enumeration value="BlindedColor"/>
+                <xs:enumeration value="MedivacPipOffset"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1000"/>
+                <xs:enumeration value="2000"/>
+                <xs:enumeration value="180,0,85"/>
+                <xs:enumeration value="500"/>
+                <xs:enumeration value="1.00"/>
+                <xs:enumeration value="E5BE07"/>
+                <xs:enumeration value="CC0000"/>
+                <xs:enumeration value="C67B06"/>
+                <xs:enumeration value="EB00B7"/>
+                <xs:enumeration value="B163ED"/>
+                <xs:enumeration value="E00709"/>
+                <xs:enumeration value="008000"/>
+                <xs:enumeration value="FFFFFF"/>
+                <xs:enumeration value="5D06AE"/>
+                <xs:enumeration value="1344BF"/>
+                <xs:enumeration value="D28400"/>
+                <xs:enumeration value="3176E7"/>
+                <xs:enumeration value="7F7F7F"/>
+                <xs:enumeration value="-10"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Anchor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="side" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Left"/>
+                <xs:enumeration value="Right"/>
+                <xs:enumeration value="Bottom"/>
+                <xs:enumeration value="Top"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="relative" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="$parent"/>
+                <xs:enumeration value="$parent/$parent"/>
+                <xs:enumeration value="$parent/IconImage"/>
+                <xs:enumeration value="$parent/Bar"/>
+                <xs:enumeration value="$parent/AmmoBar1"/>
+                <xs:enumeration value="$parent/AmmoImage1"/>
+                <xs:enumeration value="$parent/AmmoImage2"/>
+                <xs:enumeration value="$parent/AmmoImage3"/>
+                <xs:enumeration value="$parent/AmmoImage4"/>
+                <xs:enumeration value="$parent/AmmoImage6"/>
+                <xs:enumeration value="$parent/AmmoImage7"/>
+                <xs:enumeration value="$parent/AmmoImage8"/>
+                <xs:enumeration value="$parent/AmmoImage9"/>
+                <xs:enumeration value="$parent/AmmoImage10"/>
+                <xs:enumeration value="$parent/AmmoImage11"/>
+                <xs:enumeration value="$parent/AmmoImage12"/>
+                <xs:enumeration value="$parent/AmmoImage13"/>
+                <xs:enumeration value="$parent/AmmoImage14"/>
+                <xs:enumeration value="$parent/AmmoImage15"/>
+                <xs:enumeration value="$parent/AmmoImage16"/>
+                <xs:enumeration value="$parent/AmmoImage17"/>
+                <xs:enumeration value="$parent/AmmoImage18"/>
+                <xs:enumeration value="$parent/AmmoImage19"/>
+                <xs:enumeration value="$parent/AmmoImage20"/>
+                <xs:enumeration value="$parent/AmmoImage21"/>
+                <xs:enumeration value="$parent/AmmoImage22"/>
+                <xs:enumeration value="$parent/AmmoImage23"/>
+                <xs:enumeration value="$parent/AmmoImage24"/>
+                <xs:enumeration value="$parent/AmmoImage26"/>
+                <xs:enumeration value="$parent/AmmoImage27"/>
+                <xs:enumeration value="$parent/AmmoImage28"/>
+                <xs:enumeration value="$parent/AmmoImage29"/>
+                <xs:enumeration value="$parent/AmmoImage30"/>
+                <xs:enumeration value="$parent/AmmoImage31"/>
+                <xs:enumeration value="$parent/AmmoImage32"/>
+                <xs:enumeration value="$parent/AmmoImage33"/>
+                <xs:enumeration value="$parent/AmmoImage34"/>
+                <xs:enumeration value="$parent/AmmoImage35"/>
+                <xs:enumeration value="$parent/AmmoImage36"/>
+                <xs:enumeration value="$parent/AmmoImage37"/>
+                <xs:enumeration value="$parent/AmmoImage38"/>
+                <xs:enumeration value="$parent/AmmoImage39"/>
+                <xs:enumeration value="$parent/AmmoImage40"/>
+                <xs:enumeration value="$parent/AmmoImage41"/>
+                <xs:enumeration value="$parent/AmmoImage42"/>
+                <xs:enumeration value="$parent/AmmoImage43"/>
+                <xs:enumeration value="$parent/AmmoImage44"/>
+                <xs:enumeration value="$parent/TalentAvailableLabel"/>
+                <xs:enumeration value="$parent/$parent/HeroFrameBackgroundContainer"/>
+                <xs:enumeration value="$parent/BuffPlateBg"/>
+                <xs:enumeration value="$parent/DebuffLabel"/>
+                <xs:enumeration value="$parent/DebuffPlateBg"/>
+                <xs:enumeration value="$parent/StacksFull"/>
+                <xs:enumeration value="PhysicalArmorFrame"/>
+                <xs:enumeration value="StatusImage"/>
+                <xs:enumeration value="$parent/StatusImage"/>
+                <xs:enumeration value="$parent/AllArmorFrame"/>
+                <xs:enumeration value="$parent/AbilityArmorFrame"/>
+                <xs:enumeration value="$parent/HeroFrameBackgroundContainer"/>
+                <xs:enumeration value="$parent/$parent/BehaviorIcon/IconImage"/>
+                <xs:enumeration value="$parent/$parent/BehaviorIcon/StackLabel"/>
+                <xs:enumeration value="$parent/ScoreValueFrame0"/>
+                <xs:enumeration value="$parent/HealthBar"/>
+                <xs:enumeration value="$parent/PlayerUnitNameLabel"/>
+                <xs:enumeration value="TalentAvailableBg"/>
+                <xs:enumeration value="$parent/$parent/PlayerUnitNameLabel/Label"/>
+                <xs:enumeration value="$parent/UnitArmorStatusDisplay/PhysicalArmorFrame"/>
+                <xs:enumeration value="$parent/$parent/HealthBar"/>
+                <xs:enumeration value="$parent/ProgressBar"/>
+                <xs:enumeration value="$parent/DurationBar"/>
+                <xs:enumeration value="$parent/ShieldsBar"/>
+                <xs:enumeration value="$parent/$parent/ShieldsBar"/>
+                <xs:enumeration value="$parent/EnergyBar"/>
+                <xs:enumeration value="$parent/PlayerUnitNameLabel/Label"/>
+                <xs:enumeration value="$this"/>
+                <xs:enumeration value="$parent/IllusionHealthBar"/>
+                <xs:enumeration value="$parent/$parent/IllusionHealthBar"/>
+                <xs:enumeration value="$parent/HealthLabel/StatusLabel"/>
+                <xs:enumeration value="$parent/$parent/DurationBG"/>
+                <xs:enumeration value="$parent/AttachPointFrame"/>
+                <xs:enumeration value="$parent/BGImage"/>
+                <xs:enumeration value="$parent/BGImageContainer"/>
+                <xs:enumeration value="Bar"/>
+                <xs:enumeration value="$parent/CaptureProgressBGImage"/>
+                <xs:enumeration value="$parent/CaptureProgressBar"/>
+                <xs:enumeration value="$parent/CaptureBarBG"/>
+                <xs:enumeration value="$parent/ContestedBorder"/>
+                <xs:enumeration value="$parent/HelpButton"/>
+                <xs:enumeration value="$parent/MedivacBarBackgroundImage"/>
+                <xs:enumeration value="$parent/MedivacPipEmptyImage"/>
+                <xs:enumeration value="$parent/MedivacBackground"/>
+                <xs:enumeration value="$parent/MedivacBar1"/>
+                <xs:enumeration value="$parent/MedivacCircle1Image"/>
+                <xs:enumeration value="$parent/DepartSecondsLabel"/>
+                <xs:enumeration value="$parent/MedivacBar2"/>
+                <xs:enumeration value="$parent/Pip1Frame"/>
+                <xs:enumeration value="$parent/Pip2Frame"/>
+                <xs:enumeration value="$parent/Pip3Frame"/>
+                <xs:enumeration value="$parent/Pip4Frame"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="pos" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Min"/>
+                <xs:enumeration value="Max"/>
+                <xs:enumeration value="Mid"/>
+                <xs:enumeration value="78%"/>
+                <xs:enumeration value="min"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="offset" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="-1"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="-2"/>
+                <xs:enumeration value="11"/>
+                <xs:enumeration value="-7"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="8"/>
+                <xs:enumeration value="-12"/>
+                <xs:enumeration value="-23"/>
+                <xs:enumeration value="-15"/>
+                <xs:enumeration value="-22"/>
+                <xs:enumeration value="-82"/>
+                <xs:enumeration value="148"/>
+                <xs:enumeration value="120"/>
+                <xs:enumeration value="20"/>
+                <xs:enumeration value="10"/>
+                <xs:enumeration value="-5"/>
+                <xs:enumeration value="-46"/>
+                <xs:enumeration value="-34"/>
+                <xs:enumeration value="15"/>
+                <xs:enumeration value="-36"/>
+                <xs:enumeration value="-16"/>
+                <xs:enumeration value="107"/>
+                <xs:enumeration value="57"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+                <xs:enumeration value="-8"/>
+                <xs:enumeration value="6"/>
+                <xs:enumeration value="12"/>
+                <xs:enumeration value="-44"/>
+                <xs:enumeration value="#TrackedUnitFrameSizeNeg"/>
+                <xs:enumeration value="-6"/>
+                <xs:enumeration value="7"/>
+                <xs:enumeration value="-10"/>
+                <xs:enumeration value="-4"/>
+                <xs:enumeration value="14"/>
+                <xs:enumeration value="-20"/>
+                <xs:enumeration value="19"/>
+                <xs:enumeration value="25"/>
+                <xs:enumeration value="18"/>
+                <xs:enumeration value="75"/>
+                <xs:enumeration value="-70"/>
+                <xs:enumeration value="45"/>
+                <xs:enumeration value="35"/>
+                <xs:enumeration value="90"/>
+                <xs:enumeration value="30"/>
+                <xs:enumeration value="40"/>
+                <xs:enumeration value="100"/>
+                <xs:enumeration value="-75"/>
+                <xs:enumeration value="60"/>
+                <xs:enumeration value="-30"/>
+                <xs:enumeration value="55"/>
+                <xs:enumeration value="117"/>
+                <xs:enumeration value="-35"/>
+                <xs:enumeration value="9"/>
+                <xs:enumeration value="70"/>
+                <xs:enumeration value="220"/>
+                <xs:enumeration value="95"/>
+                <xs:enumeration value="-90"/>
+                <xs:enumeration value="180"/>
+                <xs:enumeration value="-104"/>
+                <xs:enumeration value="#MedivacPipOffset"/>
+                <xs:enumeration value="-100"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Unclipped">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Texture">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="@UI/StormUnitStatusHealthBarFrame"/>
+                <xs:enumeration value="@UI/HUD_Bar_Nameplate_Generic"/>
+                <xs:enumeration value="@UI/State/Protected"/>
+                <xs:enumeration value="@UI/StormUnitStatusBar"/>
+                <xs:enumeration value="@UI/StormUnitStatusAmmoOff"/>
+                <xs:enumeration value="@UI/StormUnitStatusAmmoOn"/>
+                <xs:enumeration value="@UI/State/GenericStateBG"/>
+                <xs:enumeration value="@UI/Editor/BorderImage"/>
+                <xs:enumeration value="{$parent/$parent/$parent/Stacking/@Texture}"/>
+                <xs:enumeration value="@UI/Storm_UI_HUD_Status_Duration_Ring_BG"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Armor_DurationBar"/>
+                <xs:enumeration value="{$parent/FillImageContainer/FillImage/@Texture}"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_All_Armor_Icon"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Ability_Armor_Icon"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Physical_Armor_Icon"/>
+                <xs:enumeration value="@UI/Storm_UI_InGame_Status_Healing"/>
+                <xs:enumeration value="@UI/HealingDisplay/None/TextFlare"/>
+                <xs:enumeration value="@UI/HUD_BG_NamePlate_Invulnerable"/>
+                <xs:enumeration value="@UI/HUD_BG_NamePlate_Unstoppable"/>
+                <xs:enumeration value="@UI/HUD_BG_NamePlate_Resistant"/>
+                <xs:enumeration value="@UI/Storm_UI_GenFX_BallAlpha"/>
+                <xs:enumeration value="@UI/StormTempWhite"/>
+                <xs:enumeration value="Assets\Textures\storm_placeholder_hpbar_texture_arrows_up.dds"/>
+                <xs:enumeration value="Assets\Textures\storm_placeholder_hpbar_texture_arrows_down.dds"/>
+                <xs:enumeration value="@UI/StormTalentAlertNameplateBG"/>
+                <xs:enumeration value="@UI/VikingsErikIconDeselected"/>
+                <xs:enumeration value="@UI/VikingsBaleogIconDeselected"/>
+                <xs:enumeration value="@UI/VikingsOlafIconDeselected"/>
+                <xs:enumeration value="@UI/Storm_UI_HUD_Overhead_EnergyBar_Pulse"/>
+                <xs:enumeration value="@UI/Storm_UI_HUD_Overhead_EnergyBar_Full"/>
+                <xs:enumeration value="@UI/HUD_Bar_Mana"/>
+                <xs:enumeration value="@UI/HUD_DeathTimer_PortraitArrow"/>
+                <xs:enumeration value="@UI/HUD_Bar_Health_Generic"/>
+                <xs:enumeration value="@UI/Storm_UI_InGame_hud_Bar_Health_Generic_NoResource"/>
+                <xs:enumeration value="@UI/storm_ui_probius_bigbar_mana_frame_new"/>
+                <xs:enumeration value="@UI/HUD_Bar_NamePlate_Generic"/>
+                <xs:enumeration value="@UI/HUD_TeamMapMechanic_HealthBarFill_L"/>
+                <xs:enumeration value="@UI/HUD_TeamMapMechanic_HealthBarFill_R"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_BossBar_Border"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_BossBar_HorizLights"/>
+                <xs:enumeration value="@UI/StormUnitStatusHeroFrame"/>
+                <xs:enumeration value="@UI/CaptureBar_Fill"/>
+                <xs:enumeration value="@UI/CaptureBar_BGPlain"/>
+                <xs:enumeration value="@UI/CaptureBar_Contested"/>
+                <xs:enumeration value="@UI/CaptureBar_BGSingleNotch"/>
+                <xs:enumeration value="Assets\Textures\blank.dds"/>
+                <xs:enumeration value="@@UI/StandardBattlenetMediumButtonHover"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_BarBg"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_BarFill"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_EmptyPip"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_FilledPip"/>
+                <xs:enumeration value="@UI/Storm_UI_RightSwipeMask"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepartBackground"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_Ring1"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_Ring2"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_Ring3"/>
+                <xs:enumeration value="@UI/Storm_UI_HorizontalFlare"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="layer" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Color">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="a3b4cd"/>
+                <xs:enumeration value="0,255,255"/>
+                <xs:enumeration value="#UnstoppableColor"/>
+                <xs:enumeration value="000000"/>
+                <xs:enumeration value="255, 255, 255"/>
+                <xs:enumeration value="5affff"/>
+                <xs:enumeration value="{$GameUI/TeamChaosColors/@Color}"/>
+                <xs:enumeration value="FFFFFF"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Frame">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Anchor"/>
+        <xs:element ref="Unclipped"/>
+        <xs:element ref="Texture"/>
+        <xs:element ref="Color"/>
+        <xs:element ref="AnchorUseDeviceOffset"/>
+        <xs:element ref="Alpha"/>
+        <xs:element ref="Height"/>
+        <xs:element ref="Width"/>
+        <xs:element ref="BackgroundShown"/>
+        <xs:element ref="BackgroundColor"/>
+        <xs:element ref="BarInsetRect"/>
+        <xs:element ref="BackgroundInsetRect"/>
+        <xs:element ref="RenderPriority"/>
+        <xs:element ref="LayerColor"/>
+        <xs:element ref="TextureType"/>
+        <xs:element ref="Animation"/>
+        <xs:element ref="MyTestDeleteNow"/>
+        <xs:element ref="Style"/>
+        <xs:element ref="BarCount"/>
+        <xs:element ref="DisplayFlags"/>
+        <xs:element ref="ReductionColor"/>
+        <xs:element ref="ColorStyle"/>
+        <xs:element ref="ReductionShown"/>
+        <xs:element ref="IncreaseDuration"/>
+        <xs:element ref="DecreaseDuration"/>
+        <xs:element ref="ApplyToTotal"/>
+        <xs:element ref="SegmentValue"/>
+        <xs:element ref="SegmentGroupCount"/>
+        <xs:element ref="MaxSegmentCount"/>
+        <xs:element ref="Segmented"/>
+        <xs:element ref="ColorAdjustMode"/>
+        <xs:element ref="LightAdjustColor"/>
+        <xs:element ref="DarkAdjustColor"/>
+        <xs:element ref="Tiled"/>
+        <xs:element ref="AdditionalColorStyle"/>
+        <xs:element ref="VisibleToOwner"/>
+        <xs:element ref="VisibleToAlly"/>
+        <xs:element ref="VisibleToEnemy"/>
+        <xs:element ref="ForcedRelation"/>
+        <xs:element ref="DisplayPriority"/>
+        <xs:element ref="NameType"/>
+        <xs:element ref="UseNameTypeVisibilityRules"/>
+        <xs:element ref="LayerCount"/>
+        <xs:element ref="MinValue"/>
+        <xs:element ref="MaxValue"/>
+        <xs:element ref="Value"/>
+        <xs:element ref="FillInset"/>
+        <xs:element ref="UseFillContainer"/>
+        <xs:element ref="BlendMode"/>
+        <xs:element ref="Text"/>
+        <xs:element ref="VisibilityOnFade"/>
+        <xs:element ref="Validator"/>
+        <xs:element ref="StateGroup"/>
+        <xs:element ref="ShowForOwner"/>
+        <xs:element ref="BehaviorStackOffset"/>
+        <xs:element ref="ShowForBehaviorOwner"/>
+        <xs:element ref="DebuffType"/>
+        <xs:element ref="Visible"/>
+        <xs:element ref="AcceptsMouse"/>
+        <xs:element ref="Horizontal"/>
+        <xs:element ref="CollapseLayout"/>
+        <xs:element ref="Circular"/>
+        <xs:element ref="CircularStart"/>
+        <xs:element ref="CircularEndOffset"/>
+        <xs:element ref="FormatText"/>
+        <xs:element ref="Replacement"/>
+        <xs:element ref="OwnerRenderPriority"/>
+        <xs:element ref="AllyRenderPriority"/>
+        <xs:element ref="EnemyRenderPriority"/>
+        <xs:element ref="Persistent"/>
+        <xs:element ref="BatchGroup"/>
+        <xs:element ref="Behavior"/>
+        <xs:element ref="MinStackCountDisplayed"/>
+        <xs:element ref="LayerVisible"/>
+        <xs:element ref="ImageMaskTexture"/>
+        <xs:element ref="ScaleWidthToTexture"/>
+        <xs:element ref="ScoreValueLink"/>
+        <xs:element ref="HideZero"/>
+        <xs:element ref="File"/>
+        <xs:element ref="SnapToDevicePixels"/>
+        <xs:element ref="BorderWidth"/>
+        <xs:element ref="BorderColor"/>
+        <xs:element ref="HeroSpecificLocation"/>
+        <xs:element ref="HookupAlias"/>
+        <xs:element ref="ShowStatusTooltip"/>
+        <xs:element ref="Announcable"/>
+        <xs:element ref="ShowWhileInvulnerable"/>
+        <xs:element ref="VisibilityControlledByUnitAlliances"/>
+        <xs:element ref="ShowPercent"/>
+        <xs:element ref="Expansion"/>
+        <xs:element ref="SubpixelRendering"/>
+        <xs:element ref="TextureCoords"/>
+        <xs:element ref="NormalImage"/>
+        <xs:element ref="HoverImage"/>
+        <xs:element ref="ClickSound"/>
+        <xs:element ref="Tooltip"/>
+        <xs:element ref="StateCount"/>
+        <xs:element ref="DescFlags"/>
+        <xs:element ref="AlphaLayer"/>
+        <xs:element ref="WrapUV"/>
+      </xs:choice>
+<xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Image"/>
+                <xs:enumeration value="UnitStatusBar"/>
+                <xs:enumeration value="Label"/>
+                <xs:enumeration value="CommandHotkeyFrame"/>
+                <xs:enumeration value="UnitStatusShieldedHealthBar"/>
+                <xs:enumeration value="UnitStatusColor"/>
+                <xs:enumeration value="UnitStatusEnergyBar"/>
+                <xs:enumeration value="UnitStatusProgressBar"/>
+                <xs:enumeration value="UnitStatusDurationBar"/>
+                <xs:enumeration value="UnitStatusVeterancyBar"/>
+                <xs:enumeration value="UnitStatusProgressInfo"/>
+                <xs:enumeration value="UnitStatusLevel"/>
+                <xs:enumeration value="UnitStatusName"/>
+                <xs:enumeration value="Frame"/>
+                <xs:enumeration value="ProgressBar"/>
+                <xs:enumeration value="UnitStatusAmmo"/>
+                <xs:enumeration value="UnitStatusTalentAvailableIndicator"/>
+                <xs:enumeration value="UnitStatusBuffDebuffElement"/>
+                <xs:enumeration value="UnitStatusUnitStackingDebuffElement"/>
+                <xs:enumeration value="UnitStatusUnitArmor"/>
+                <xs:enumeration value="TextFormatFrame"/>
+                <xs:enumeration value="UnitStatusUnitHealingModifier"/>
+                <xs:enumeration value="BehaviorIcon"/>
+                <xs:enumeration value="UnitStatusBehaviorIcon"/>
+                <xs:enumeration value="UnitStatusValidatorAnimElement"/>
+                <xs:enumeration value="ScoreValueImageFrame"/>
+                <xs:enumeration value="ScoreValueLabelFrame"/>
+                <xs:enumeration value="UnitStatusScoreValue"/>
+                <xs:enumeration value="CutsceneFrame"/>
+                <xs:enumeration value="UnitStatusElement"/>
+                <xs:enumeration value="UnitStatusFrame"/>
+                <xs:enumeration value="HeroSpecificContainerPanel"/>
+                <xs:enumeration value="UnitStatusControlGroupHotkeyFrame"/>
+                <xs:enumeration value="UnitStatusUnitTrackingBehavior"/>
+                <xs:enumeration value="UnitStatusEnergyLabel"/>
+                <xs:enumeration value="UnitStatusShieldedHealthLabel"/>
+                <xs:enumeration value="UnitStatusHealthLabel"/>
+                <xs:enumeration value="UnitStatusPreselectionIndicator"/>
+                <xs:enumeration value="Button"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="name" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="SemiWhiteBorderTemplate"/>
+                <xs:enumeration value="UnitStatusBarTemplate"/>
+                <xs:enumeration value="HealthBarBackgroundTemplate"/>
+                <xs:enumeration value="HotkeyLabel"/>
+                <xs:enumeration value="UnitSelectionNumberLabelTemplate"/>
+                <xs:enumeration value="UnitStatusHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatusSegmentedHealthBarTemplate"/>
+                <xs:enumeration value="ProtectedColor"/>
+                <xs:enumeration value="UnitStatusProtectedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatusShieldedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatusSegmentedShieldedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatusEnergyBarTemplate"/>
+                <xs:enumeration value="UnitStatusSegmentedEnergyTemplate"/>
+                <xs:enumeration value="UnitStatusSolidEnergyTemplate"/>
+                <xs:enumeration value="UnitStatusShieldBarTemplate"/>
+                <xs:enumeration value="UnitStatusSegmentedShieldsBarTemplate"/>
+                <xs:enumeration value="UnitStatusProgressBarTemplate"/>
+                <xs:enumeration value="UnitStatusDurationBarTemplate"/>
+                <xs:enumeration value="UnitStatusVeterancyBarTemplate"/>
+                <xs:enumeration value="IconImage"/>
+                <xs:enumeration value="Bar"/>
+                <xs:enumeration value="ActivityLabel"/>
+                <xs:enumeration value="UnitStatusProgressInfoTemplate"/>
+                <xs:enumeration value="Label"/>
+                <xs:enumeration value="UnitStatusLevelTemplate"/>
+                <xs:enumeration value="UnitStatusNameTemplate"/>
+                <xs:enumeration value="UnitStatusPlayerNameTemplate"/>
+                <xs:enumeration value="UnitStatusUnitNameTemplate"/>
+                <xs:enumeration value="AmmoImageTemplate"/>
+                <xs:enumeration value="BackgroundImage"/>
+                <xs:enumeration value="FillImage"/>
+                <xs:enumeration value="FillImageContainer"/>
+                <xs:enumeration value="AmmoBarTemplate"/>
+                <xs:enumeration value="AmmoBar1"/>
+                <xs:enumeration value="UnitStatusAmmoTemplate"/>
+                <xs:enumeration value="AmmoBar2"/>
+                <xs:enumeration value="UnitStatusAmmoTemplate40"/>
+                <xs:enumeration value="SAmmoImageTemplate"/>
+                <xs:enumeration value="AmmoImage1"/>
+                <xs:enumeration value="AmmoImage2"/>
+                <xs:enumeration value="AmmoImage3"/>
+                <xs:enumeration value="AmmoImage4"/>
+                <xs:enumeration value="AmmoImage5"/>
+                <xs:enumeration value="AmmoImage6"/>
+                <xs:enumeration value="AmmoImage7"/>
+                <xs:enumeration value="AmmoImage8"/>
+                <xs:enumeration value="AmmoImage9"/>
+                <xs:enumeration value="AmmoImage10"/>
+                <xs:enumeration value="AmmoImage11"/>
+                <xs:enumeration value="AmmoImage12"/>
+                <xs:enumeration value="AmmoImage13"/>
+                <xs:enumeration value="AmmoImage14"/>
+                <xs:enumeration value="AmmoImage15"/>
+                <xs:enumeration value="AmmoImage16"/>
+                <xs:enumeration value="AmmoImage17"/>
+                <xs:enumeration value="AmmoImage18"/>
+                <xs:enumeration value="AmmoImage19"/>
+                <xs:enumeration value="AmmoImage20"/>
+                <xs:enumeration value="AmmoImage21"/>
+                <xs:enumeration value="AmmoImage22"/>
+                <xs:enumeration value="AmmoImage23"/>
+                <xs:enumeration value="AmmoImage24"/>
+                <xs:enumeration value="AmmoImage25"/>
+                <xs:enumeration value="AmmoImage26"/>
+                <xs:enumeration value="AmmoImage27"/>
+                <xs:enumeration value="AmmoImage28"/>
+                <xs:enumeration value="AmmoImage29"/>
+                <xs:enumeration value="AmmoImage30"/>
+                <xs:enumeration value="AmmoImage31"/>
+                <xs:enumeration value="AmmoImage32"/>
+                <xs:enumeration value="AmmoImage33"/>
+                <xs:enumeration value="AmmoImage34"/>
+                <xs:enumeration value="AmmoImage35"/>
+                <xs:enumeration value="AmmoImage36"/>
+                <xs:enumeration value="AmmoImage37"/>
+                <xs:enumeration value="AmmoImage38"/>
+                <xs:enumeration value="AmmoImage39"/>
+                <xs:enumeration value="AmmoImage40"/>
+                <xs:enumeration value="AmmoImage41"/>
+                <xs:enumeration value="AmmoImage42"/>
+                <xs:enumeration value="AmmoImage43"/>
+                <xs:enumeration value="AmmoImage44"/>
+                <xs:enumeration value="AmmoImage45"/>
+                <xs:enumeration value="TempleUnitStatusAmmoTemplate"/>
+                <xs:enumeration value="TalentAvailableBg"/>
+                <xs:enumeration value="TalentAvailableLabel"/>
+                <xs:enumeration value="TalentAvailableIndicatorTemplate"/>
+                <xs:enumeration value="BuffPlateBg"/>
+                <xs:enumeration value="DebuffLabel"/>
+                <xs:enumeration value="BuffIconLeft"/>
+                <xs:enumeration value="InvulnerableUnitStatusBuffDisplayTemplate"/>
+                <xs:enumeration value="DebuffPlateBg"/>
+                <xs:enumeration value="DebuffIconLeft"/>
+                <xs:enumeration value="UnitStatusBuffDebuffDisplayTemplate"/>
+                <xs:enumeration value="StacksFull"/>
+                <xs:enumeration value="SingleBehaviorTemplate"/>
+                <xs:enumeration value="StacksProgressBar"/>
+                <xs:enumeration value="Stacking"/>
+                <xs:enumeration value="StackingBehaviorTemplate"/>
+                <xs:enumeration value="PermanentDurationBar"/>
+                <xs:enumeration value="DurationBar"/>
+                <xs:enumeration value="StatusImage"/>
+                <xs:enumeration value="ArmorLabel"/>
+                <xs:enumeration value="AllArmorFrame"/>
+                <xs:enumeration value="AbilityArmorFrame"/>
+                <xs:enumeration value="PhysicalArmorFrame"/>
+                <xs:enumeration value="UnitArmorStatusDisplayTemplate"/>
+                <xs:enumeration value="StatusLabelFormatSign"/>
+                <xs:enumeration value="TextFlareImage"/>
+                <xs:enumeration value="StatusLabel"/>
+                <xs:enumeration value="UnitStatusHealingDisplayTemplate"/>
+                <xs:enumeration value="AttachPointFrame"/>
+                <xs:enumeration value="HeroInvulnerableFrameBackground"/>
+                <xs:enumeration value="HeroUnstoppableFrameBackground"/>
+                <xs:enumeration value="HeroResistantFrameBackground"/>
+                <xs:enumeration value="BehaviorIcon"/>
+                <xs:enumeration value="UnitStatusMapMechanicTargetBehaviorIcon"/>
+                <xs:enumeration value="UnitStatusMapMechanicTarget2BehaviorIcon"/>
+                <xs:enumeration value="StackLabel"/>
+                <xs:enumeration value="MineralGlowColorFrame"/>
+                <xs:enumeration value="MiMaIconGlow"/>
+                <xs:enumeration value="MiMaTextGlow"/>
+                <xs:enumeration value="MineralMadnessUnitMechanicStackCountFrame"/>
+                <xs:enumeration value="UnitBehaviorStackCountFrame"/>
+                <xs:enumeration value="UnitStatusMapMechanicInstantBehaviorIcon"/>
+                <xs:enumeration value="UnitStatusMapMechanicInstantBehavior2Icon"/>
+                <xs:enumeration value="UnitStatusMapMechanicInstantBehavior3Icon"/>
+                <xs:enumeration value="UnitStatusMapMechanicInstantBehavior4Icon"/>
+                <xs:enumeration value="Image"/>
+                <xs:enumeration value="ScoreValueFrame0"/>
+                <xs:enumeration value="ScoreValueFrame1"/>
+                <xs:enumeration value="CarriedMechanicScoreValueFrame"/>
+                <xs:enumeration value="OnFireCutsceneFrame"/>
+                <xs:enumeration value="HeroFrameBackgroundContainer"/>
+                <xs:enumeration value="PlayerUnitNameLabel"/>
+                <xs:enumeration value="BotDifficultyLabel"/>
+                <xs:enumeration value="TalentAvailableIndicator"/>
+                <xs:enumeration value="UnitStatusBuffDebuffDisplay"/>
+                <xs:enumeration value="UnitArmorStatusDisplay"/>
+                <xs:enumeration value="UnitStatusHealingDisplay"/>
+                <xs:enumeration value="DimmingFrame"/>
+                <xs:enumeration value="HeroUnitStatusParentFrame"/>
+                <xs:enumeration value="HeroUnitStatusFrameNoHealthNoEnergyTemplate"/>
+                <xs:enumeration value="HealthBar"/>
+                <xs:enumeration value="HealthBarResistant"/>
+                <xs:enumeration value="HealthBarVulnerable"/>
+                <xs:enumeration value="HealthBarInvincible"/>
+                <xs:enumeration value="InvincibleHealthBarFrame"/>
+                <xs:enumeration value="HealthBarInvincibleFlash"/>
+                <xs:enumeration value="ValidatorBasedVisibilityAnims"/>
+                <xs:enumeration value="BotStatusLabel"/>
+                <xs:enumeration value="ProgressBar"/>
+                <xs:enumeration value="HeroSpecificStackingBuffsPanel"/>
+                <xs:enumeration value="HeroUnitStatusFrameNoEnergyTemplate"/>
+                <xs:enumeration value="ShieldsBar"/>
+                <xs:enumeration value="ShieldsBarInvincible"/>
+                <xs:enumeration value="InvincibleShieldBarFrame"/>
+                <xs:enumeration value="HeroUnitStatusFrameSeparateShieldBar"/>
+                <xs:enumeration value="UnitStatusResistDisplay"/>
+                <xs:enumeration value="HeroUnitStatusFrameNoNameNoEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusFrameNoNameNoEnergyShowDebuffs_PetTemplate"/>
+                <xs:enumeration value="HeroUnitStatusFrameAllGreyNoEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusFrameDoubleTallNoEnergyTemplate"/>
+                <xs:enumeration value="MultiBackground"/>
+                <xs:enumeration value="BackgroundSideGlowOwner"/>
+                <xs:enumeration value="SelectionStatusIcon"/>
+                <xs:enumeration value="SelectionNumberLabel"/>
+                <xs:enumeration value="VikingIdentityFrame"/>
+                <xs:enumeration value="LostVikingsUnitStatusFrameTemplate"/>
+                <xs:enumeration value="LostVikingsErikUnitStatusFrameTemplate"/>
+                <xs:enumeration value="LostVikingsBaleogUnitStatusFrameTemplate"/>
+                <xs:enumeration value="LostVikingsOlafUnitStatusFrameTemplate"/>
+                <xs:enumeration value="EnergyBar"/>
+                <xs:enumeration value="HeroUnitStatusFrameTemplate"/>
+                <xs:enumeration value="UnitTrackingElement"/>
+                <xs:enumeration value="HeroUnitVehicleStatusFrame"/>
+                <xs:enumeration value="HeroUnit1SegmentStatusFrame"/>
+                <xs:enumeration value="HeroUnitStatusFrameNoTalentNotification"/>
+                <xs:enumeration value="HeroUnitStatusFrameYellowEnergy"/>
+                <xs:enumeration value="HeroUnitStatusFrameBreathEnergy"/>
+                <xs:enumeration value="HeroUnitStatusFrameOrangeEnergy"/>
+                <xs:enumeration value="ChargingAnims"/>
+                <xs:enumeration value="FullManaAnims"/>
+                <xs:enumeration value="RechargeFlash"/>
+                <xs:enumeration value="FullManaFlash"/>
+                <xs:enumeration value="HeroUnitStatusFrameBlinkingEnergy"/>
+                <xs:enumeration value="HeroUnitStatusFrameGreyEnergy"/>
+                <xs:enumeration value="HeroUnitStatusFramePinkEnergy"/>
+                <xs:enumeration value="HeroUnitStatusFrameRedEnergy"/>
+                <xs:enumeration value="HeroUnitStatusFrameRage"/>
+                <xs:enumeration value="IllusionHealthBar"/>
+                <xs:enumeration value="IllusionDurationBar"/>
+                <xs:enumeration value="IllusionInvincibleHealthBarFrame"/>
+                <xs:enumeration value="IllusionHeroUnitStatusFrameTemplate"/>
+                <xs:enumeration value="StatusBarLabel"/>
+                <xs:enumeration value="EnergyBarLabel"/>
+                <xs:enumeration value="HardenedFocusIndicator"/>
+                <xs:enumeration value="HardenedFocusVisibilityAnims"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameNoHealthTemplate"/>
+                <xs:enumeration value="HealthBarLabel"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameNoShieldTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameNoEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameNoEnergyNoShieldTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameYellowEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameBreathEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameRageEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameOrangeEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFrameBlinkingEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusConsoleFramePinkEnergyTemplate"/>
+                <xs:enumeration value="HeroUnitStatusObserverFrameTemplate"/>
+                <xs:enumeration value="HealthLabel"/>
+                <xs:enumeration value="CoreUnitStatusConsoleFrameAllyTemplate"/>
+                <xs:enumeration value="CoreUnitStatusConsoleFrameTemplate"/>
+                <xs:enumeration value="MapMechanicStatusAllyFrameTemplate"/>
+                <xs:enumeration value="MapMechanicStatusEnemyFrameTemplate"/>
+                <xs:enumeration value="BarBackgroundImage"/>
+                <xs:enumeration value="UnitStatusFramePreselectionIndicator"/>
+                <xs:enumeration value="MinionUnitStatusFrameTemplate"/>
+                <xs:enumeration value="MinionUnitStatusFrameWithDurationBars"/>
+                <xs:enumeration value="MinionUnitStatusFrameOnlyDurationBars"/>
+                <xs:enumeration value="LargeMinionUnitStatusFrameTemplate"/>
+                <xs:enumeration value="SmallMinionUnitStatusFrameTemplate"/>
+                <xs:enumeration value="TreasureChestUnitStatusFrameTemplate"/>
+                <xs:enumeration value="CreepTumorUnitStatusFrameTemplate"/>
+                <xs:enumeration value="IndestructibleTimedUnitStatusFrameTemplate"/>
+                <xs:enumeration value="TeamIndicator"/>
+                <xs:enumeration value="TeamColor"/>
+                <xs:enumeration value="DurationBG"/>
+                <xs:enumeration value="IndestructibleTimedUnitTeamColorIndicatedDurationTemplate"/>
+                <xs:enumeration value="PrimaryColorFrame"/>
+                <xs:enumeration value="PrimaryHighlightColorFrame"/>
+                <xs:enumeration value="BGImage"/>
+                <xs:enumeration value="BGImageLeft"/>
+                <xs:enumeration value="BGImageRight"/>
+                <xs:enumeration value="BGImageContainer"/>
+                <xs:enumeration value="OnlyEnergyUnitStatusFrameTemplate"/>
+                <xs:enumeration value="CreepUnitStatusFrameTemplate"/>
+                <xs:enumeration value="SuperCreepUnitStatusFrameTemplate"/>
+                <xs:enumeration value="SuperCreepUnitStatusFrameTemplateSmaller"/>
+                <xs:enumeration value="SuperCreepNeutralUnitStatusFrameTemplate"/>
+                <xs:enumeration value="TowerUnitStatusFrameTemplate"/>
+                <xs:enumeration value="TowerUnitStatusFrameTemplate40Ammo"/>
+                <xs:enumeration value="TowerAmmoCount"/>
+                <xs:enumeration value="TempleUnitStatusFrameTemplate"/>
+                <xs:enumeration value="HealthBarProtected"/>
+                <xs:enumeration value="TrainingBar"/>
+                <xs:enumeration value="LordOrderUnitStatusFrameTemplate"/>
+                <xs:enumeration value="WallGateUnitStatusFrameTemplate"/>
+                <xs:enumeration value="CaptureProgressBGImage"/>
+                <xs:enumeration value="CaptureProgressBar"/>
+                <xs:enumeration value="CaptureBarBG"/>
+                <xs:enumeration value="ContestedBorder"/>
+                <xs:enumeration value="ContestedLabel"/>
+                <xs:enumeration value="CaptureBeaconUnitStatusFrame"/>
+                <xs:enumeration value="CaptureBarNotch"/>
+                <xs:enumeration value="CaptureBeaconSingleNotchUnitStatusFrame"/>
+                <xs:enumeration value="TimedUnitStatusFrameTemplate"/>
+                <xs:enumeration value="NormalImage"/>
+                <xs:enumeration value="HoverImage"/>
+                <xs:enumeration value="HelpButton"/>
+                <xs:enumeration value="HelpText"/>
+                <xs:enumeration value="MapMechanicHelpButton"/>
+                <xs:enumeration value="BarLabel"/>
+                <xs:enumeration value="MedivacBarBackgroundImage"/>
+                <xs:enumeration value="MedivacBarFillImage"/>
+                <xs:enumeration value="OkLabel"/>
+                <xs:enumeration value="MedivacBarTemplate"/>
+                <xs:enumeration value="MedivacPipEmptyImage"/>
+                <xs:enumeration value="WhiteOutImage"/>
+                <xs:enumeration value="MedivacPipFilledImage"/>
+                <xs:enumeration value="MedivacPipTemplate"/>
+                <xs:enumeration value="MedivacBackground"/>
+                <xs:enumeration value="MedivacCircle1Image"/>
+                <xs:enumeration value="MedivacCircle2Image"/>
+                <xs:enumeration value="MedivacCircle3Image"/>
+                <xs:enumeration value="MedivacBar1"/>
+                <xs:enumeration value="MedivacBar2"/>
+                <xs:enumeration value="MedivacBar3"/>
+                <xs:enumeration value="Pip1Frame"/>
+                <xs:enumeration value="Pip2Frame"/>
+                <xs:enumeration value="Pip3Frame"/>
+                <xs:enumeration value="Pip4Frame"/>
+                <xs:enumeration value="Pip5Frame"/>
+                <xs:enumeration value="DepartTextLabel"/>
+                <xs:enumeration value="LeadingSecondsLabel"/>
+                <xs:enumeration value="DepartSecondsLabel"/>
+                <xs:enumeration value="DepartMilliLabel"/>
+                <xs:enumeration value="ScanLineImage"/>
+                <xs:enumeration value="MedivacDepartCountdown"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="template" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="UnitStatus/UnitStatusBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusShieldedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusEnergyBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusShieldBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusNameTemplate"/>
+                <xs:enumeration value="UnitStatus/AmmoBarTemplate"/>
+                <xs:enumeration value="UnitStatus/SAmmoImageTemplate"/>
+                <xs:enumeration value="UnitStatus/AmmoImageTemplate"/>
+                <xs:enumeration value="UnitStatus/SingleBehaviorTemplate"/>
+                <xs:enumeration value="SharedOnFireVFX/OnFireCutsceneFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/TalentAvailableIndicatorTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusBuffDebuffDisplayTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitArmorStatusDisplayTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusHealingDisplayTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusSegmentedShieldedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusProtectedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusProgressBarTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusDurationBarTemplate"/>
+                <xs:enumeration value="UnitStatus/HeroUnitStatusFrameNoHealthNoEnergyTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusSegmentedHealthBarTemplate"/>
+                <xs:enumeration value="UnitStatus/HeroUnitStatusFrameNoEnergyTemplate"/>
+                <xs:enumeration value="StandardTemplates/RemoveThisFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitSelectionNumberLabelTemplate"/>
+                <xs:enumeration value="UnitStatus/LostVikingsUnitStatusFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/UnitStatusSegmentedEnergyTemplate"/>
+                <xs:enumeration value="UnitStatusUnitTracking/UnitTrackingElementSingleTemplate"/>
+                <xs:enumeration value="UnitStatus/HeroUnitStatusFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/HeroUnitStatusConsoleFrameNoHealthTemplate"/>
+                <xs:enumeration value="UnitStatus/HeroUnitStatusConsoleFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/HeroUnitStatusConsoleFrameNoShieldTemplate"/>
+                <xs:enumeration value="UnitStatus/MinionUnitStatusFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/SuperCreepUnitStatusFrameTemplate"/>
+                <xs:enumeration value="UnitStatus/InvulnerableUnitStatusBuffDisplayTemplate"/>
+                <xs:enumeration value="UnitStatus/TempleUnitStatusAmmoTemplate"/>
+                <xs:enumeration value="UnitStatus/CaptureBeaconUnitStatusFrame"/>
+                <xs:enumeration value="UnitStatus/MedivacBarTemplate"/>
+                <xs:enumeration value="UnitStatus/MedivacPipTemplate"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="AnchorUseDeviceOffset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Alpha">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="255"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="160"/>
+                <xs:enumeration value="90"/>
+                <xs:enumeration value="127"/>
+                <xs:enumeration value="30"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Height">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="8"/>
+                <xs:enumeration value="6"/>
+                <xs:enumeration value="9"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="20"/>
+                <xs:enumeration value="30"/>
+                <xs:enumeration value="16"/>
+                <xs:enumeration value="32"/>
+                <xs:enumeration value="36"/>
+                <xs:enumeration value="64"/>
+                <xs:enumeration value="33"/>
+                <xs:enumeration value="84"/>
+                <xs:enumeration value="168"/>
+                <xs:enumeration value="45"/>
+                <xs:enumeration value="48"/>
+                <xs:enumeration value="28"/>
+                <xs:enumeration value="116"/>
+                <xs:enumeration value="24"/>
+                <xs:enumeration value="50"/>
+                <xs:enumeration value="52"/>
+                <xs:enumeration value="108"/>
+                <xs:enumeration value="4"/>
+                <xs:enumeration value="12"/>
+                <xs:enumeration value="21"/>
+                <xs:enumeration value="25"/>
+                <xs:enumeration value="40"/>
+                <xs:enumeration value="10"/>
+                <xs:enumeration value="7"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="39"/>
+                <xs:enumeration value="15"/>
+                <xs:enumeration value="23"/>
+                <xs:enumeration value="11"/>
+                <xs:enumeration value="72"/>
+                <xs:enumeration value="14"/>
+                <xs:enumeration value="80"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="24.75"/>
+                <xs:enumeration value="10.5"/>
+                <xs:enumeration value="54"/>
+                <xs:enumeration value="215"/>
+                <xs:enumeration value="75"/>
+                <xs:enumeration value="300"/>
+                <xs:enumeration value="104"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Width">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="140"/>
+                <xs:enumeration value="32"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="25"/>
+                <xs:enumeration value="220"/>
+                <xs:enumeration value="8"/>
+                <xs:enumeration value="160"/>
+                <xs:enumeration value="200"/>
+                <xs:enumeration value="36"/>
+                <xs:enumeration value="{$parent/Stacking/@Width}"/>
+                <xs:enumeration value="64"/>
+                <xs:enumeration value="152"/>
+                <xs:enumeration value="260"/>
+                <xs:enumeration value="256"/>
+                <xs:enumeration value="45"/>
+                <xs:enumeration value="40"/>
+                <xs:enumeration value="48"/>
+                <xs:enumeration value="28"/>
+                <xs:enumeration value="198"/>
+                <xs:enumeration value="193"/>
+                <xs:enumeration value="143"/>
+                <xs:enumeration value="136"/>
+                <xs:enumeration value="130"/>
+                <xs:enumeration value="59"/>
+                <xs:enumeration value="56"/>
+                <xs:enumeration value="244"/>
+                <xs:enumeration value="232"/>
+                <xs:enumeration value="234"/>
+                <xs:enumeration value="105"/>
+                <xs:enumeration value="180"/>
+                <xs:enumeration value="60"/>
+                <xs:enumeration value="155"/>
+                <xs:enumeration value="138"/>
+                <xs:enumeration value="58"/>
+                <xs:enumeration value="150"/>
+                <xs:enumeration value="148"/>
+                <xs:enumeration value="75"/>
+                <xs:enumeration value="74"/>
+                <xs:enumeration value="100"/>
+                <xs:enumeration value="97"/>
+                <xs:enumeration value="50"/>
+                <xs:enumeration value="70"/>
+                <xs:enumeration value="144"/>
+                <xs:enumeration value="134"/>
+                <xs:enumeration value="80"/>
+                <xs:enumeration value="178"/>
+                <xs:enumeration value="133"/>
+                <xs:enumeration value="133.5"/>
+                <xs:enumeration value="108"/>
+                <xs:enumeration value="100.5"/>
+                <xs:enumeration value="102"/>
+                <xs:enumeration value="164"/>
+                <xs:enumeration value="225"/>
+                <xs:enumeration value="149"/>
+                <xs:enumeration value="210"/>
+                <xs:enumeration value="175"/>
+                <xs:enumeration value="120"/>
+                <xs:enumeration value="84"/>
+                <xs:enumeration value="68"/>
+                <xs:enumeration value="700"/>
+                <xs:enumeration value="504"/>
+                <xs:enumeration value="170"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BackgroundShown">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BackgroundColor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0, 0, 0, 0"/>
+                <xs:enumeration value="180, 0, 0, 0"/>
+                <xs:enumeration value="180,0,0,0"/>
+                <xs:enumeration value="127, 0, 0, 0"/>
+                <xs:enumeration value="200, 0, 0, 0"/>
+                <xs:enumeration value="127,0,0,0"/>
+                <xs:enumeration value="165, 0, 0, 0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BarInsetRect">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="top" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="left" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="bottom" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="right" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BackgroundInsetRect">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="top" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="-1"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="left" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="-1"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="bottom" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="-1"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="right" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="-1"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="RenderPriority">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="600"/>
+                <xs:enumeration value="602"/>
+                <xs:enumeration value="601"/>
+                <xs:enumeration value="511"/>
+                <xs:enumeration value="520"/>
+                <xs:enumeration value="497"/>
+                <xs:enumeration value="700"/>
+                <xs:enumeration value="612"/>
+                <xs:enumeration value="514"/>
+                <xs:enumeration value="512"/>
+                <xs:enumeration value="210"/>
+                <xs:enumeration value="200"/>
+                <xs:enumeration value="#RenderPriority_Background"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="LayerColor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="255, 255, 255"/>
+                <xs:enumeration value="2269ff"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="layer" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="TextureType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Normal"/>
+                <xs:enumeration value="Circular"/>
+                <xs:enumeration value="NineSlice"/>
+                <xs:enumeration value="EndCap"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Event">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="event" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="UnitStatusOwner"/>
+                <xs:enumeration value="UnitStatusAlly"/>
+                <xs:enumeration value="UnitStatusEnemy"/>
+                <xs:enumeration value="OnShown"/>
+                <xs:enumeration value="ResetVisibility"/>
+                <xs:enumeration value="Hide"/>
+                <xs:enumeration value="Show"/>
+                <xs:enumeration value="HideStackCountCarryBehavior"/>
+                <xs:enumeration value="MiMaMineralsTargetHasGE40Stacks"/>
+                <xs:enumeration value="MiMaMineralsLT40Combine"/>
+                <xs:enumeration value="MiMaResetTextSize"/>
+                <xs:enumeration value="OnHidden"/>
+                <xs:enumeration value="DimmedOn"/>
+                <xs:enumeration value="DimmedOff"/>
+                <xs:enumeration value="ResistantOn"/>
+                <xs:enumeration value="ResistantOff"/>
+                <xs:enumeration value="VulnerableOn"/>
+                <xs:enumeration value="VulnerableOff"/>
+                <xs:enumeration value="FlashOn"/>
+                <xs:enumeration value="FlashOff"/>
+                <xs:enumeration value="TargetIsProtected"/>
+                <xs:enumeration value="TargetNotProtected"/>
+                <xs:enumeration value="ProbiusNearPylonOrOverchargedPylon"/>
+                <xs:enumeration value="ProbiusNotNearPylonAndNotNearOverchargedPylon"/>
+                <xs:enumeration value="EnergyFullCaster"/>
+                <xs:enumeration value="HasHardenedFocusTalent"/>
+                <xs:enumeration value="NoHardenedFocusTalent"/>
+                <xs:enumeration value="Init"/>
+                <xs:enumeration value="End"/>
+                <xs:enumeration value="Reset"/>
+                <xs:enumeration value="Ready"/>
+                <xs:enumeration value="Trigger"/>
+                <xs:enumeration value="Begin"/>
+                <xs:enumeration value="Pip1"/>
+                <xs:enumeration value="Pip2"/>
+                <xs:enumeration value="Pip3"/>
+                <xs:enumeration value="Pip4"/>
+                <xs:enumeration value="Pip5"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="action" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Stop"/>
+                <xs:enumeration value="Play"/>
+                <xs:enumeration value="DirectionReverse,Play"/>
+                <xs:enumeration value="DirectionForward,Play"/>
+                <xs:enumeration value="Restart,Play"/>
+                <xs:enumeration value="Reset,Play"/>
+                <xs:enumeration value="Reset,Pause"/>
+                <xs:enumeration value="Reset, Play"/>
+                <xs:enumeration value="Reset, DirectionForward, Play"/>
+                <xs:enumeration value="Restart,Pause"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="frame" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="$parent"/>
+                <xs:enumeration value="$parent/TalentAvailableIndicator"/>
+                <xs:enumeration value="$parent/$parent"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Key">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Curve"/>
+                <xs:enumeration value="Bool"/>
+                <xs:enumeration value="Event"/>
+                <xs:enumeration value="Text"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="time" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0.0"/>
+                <xs:enumeration value="0.3"/>
+                <xs:enumeration value=".5"/>
+                <xs:enumeration value="0.15"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="0.25"/>
+                <xs:enumeration value="0.001"/>
+                <xs:enumeration value="0.4"/>
+                <xs:enumeration value=".1"/>
+                <xs:enumeration value=".3"/>
+                <xs:enumeration value=".25"/>
+                <xs:enumeration value=".2"/>
+                <xs:enumeration value="0.33"/>
+                <xs:enumeration value="0.2"/>
+                <xs:enumeration value=".05"/>
+                <xs:enumeration value=".15"/>
+                <xs:enumeration value=".7"/>
+                <xs:enumeration value=".8"/>
+                <xs:enumeration value=".9"/>
+                <xs:enumeration value=".6"/>
+                <xs:enumeration value=".4"/>
+                <xs:enumeration value=".01"/>
+                <xs:enumeration value="10"/>
+                <xs:enumeration value="9"/>
+                <xs:enumeration value="7"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="0.01"/>
+                <xs:enumeration value=".35"/>
+                <xs:enumeration value=".45"/>
+                <xs:enumeration value=".55"/>
+                <xs:enumeration value=".65"/>
+                <xs:enumeration value=".75"/>
+                <xs:enumeration value=".85"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="value" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="80"/>
+                <xs:enumeration value="255"/>
+                <xs:enumeration value="200"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="False"/>
+                <xs:enumeration value="-3"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="150"/>
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="100"/>
+                <xs:enumeration value="160"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="12"/>
+                <xs:enumeration value="95"/>
+                <xs:enumeration value="220"/>
+                <xs:enumeration value="20"/>
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="50"/>
+                <xs:enumeration value="250"/>
+                <xs:enumeration value="110"/>
+                <xs:enumeration value="240"/>
+                <xs:enumeration value="-8"/>
+                <xs:enumeration value="5060"/>
+                <xs:enumeration value="6060"/>
+                <xs:enumeration value="3000"/>
+                <xs:enumeration value="107"/>
+                <xs:enumeration value="-6"/>
+                <xs:enumeration value="30"/>
+                <xs:enumeration value="85"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="inout" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Linear"/>
+                <xs:enumeration value="Slow"/>
+                <xs:enumeration value="Slow,Linear"/>
+                <xs:enumeration value="Step"/>
+                <xs:enumeration value="Linear,Auto"/>
+                <xs:enumeration value="Auto,Linear"/>
+                <xs:enumeration value="Fast"/>
+                <xs:enumeration value="Linear,Slow"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="event" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="MiMaResetTextSize"/>
+                <xs:enumeration value="FlashOn"/>
+                <xs:enumeration value="FlashOff"/>
+                <xs:enumeration value="Init"/>
+                <xs:enumeration value="Ready"/>
+                <xs:enumeration value="Reset"/>
+                <xs:enumeration value="Trigger"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="text" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="946782"/>
+                <xs:enumeration value="915313"/>
+                <xs:enumeration value="744124"/>
+                <xs:enumeration value="83835"/>
+                <xs:enumeration value="822731"/>
+                <xs:enumeration value="731285"/>
+                <xs:enumeration value="774044"/>
+                <xs:enumeration value="629272"/>
+                <xs:enumeration value="628036"/>
+                <xs:enumeration value="547174"/>
+                <xs:enumeration value="515317"/>
+                <xs:enumeration value="444124"/>
+                <xs:enumeration value="43837"/>
+                <xs:enumeration value="322738"/>
+                <xs:enumeration value="331285"/>
+                <xs:enumeration value="2740443"/>
+                <xs:enumeration value="229278"/>
+                <xs:enumeration value="128032"/>
+                <xs:enumeration value="107178"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Controller">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Key"/>
+      </xs:choice>
+<xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Fade"/>
+                <xs:enumeration value="Visibility"/>
+                <xs:enumeration value="Anchor"/>
+                <xs:enumeration value="Style"/>
+                <xs:enumeration value="Dimension"/>
+                <xs:enumeration value="Event"/>
+                <xs:enumeration value="LayerUV"/>
+                <xs:enumeration value="Rotation"/>
+                <xs:enumeration value="Text"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="end" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="PingPong"/>
+                <xs:enumeration value="Pause"/>
+                <xs:enumeration value="Stop"/>
+                <xs:enumeration value="Loop"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="frame" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="TalentAvailableBg"/>
+                <xs:enumeration value="TalentAvailableLabel"/>
+                <xs:enumeration value="BehaviorIcon/StackLabel"/>
+                <xs:enumeration value="BehaviorIcon/IconImage"/>
+                <xs:enumeration value="$parent/BehaviorIcon/StackLabel"/>
+                <xs:enumeration value="$parent/BehaviorIcon/IconImage"/>
+                <xs:enumeration value="$this"/>
+                <xs:enumeration value="$parent/HealthBarInvincibleFlash"/>
+                <xs:enumeration value="$parent/InvincibleHealthBarFrame"/>
+                <xs:enumeration value="$parent/InvincibleShieldBarFrame"/>
+                <xs:enumeration value="$parent/EnergyBar/RechargeFlash"/>
+                <xs:enumeration value="$parent/EnergyBar/FullManaFlash"/>
+                <xs:enumeration value="$parent/IllusionInvincibleHealthBarFrame"/>
+                <xs:enumeration value="$parent/HardenedFocusIndicator"/>
+                <xs:enumeration value="DepartTextLabel"/>
+                <xs:enumeration value="MedivacCircle1Image"/>
+                <xs:enumeration value="MedivacCircle2Image"/>
+                <xs:enumeration value="MedivacCircle3Image"/>
+                <xs:enumeration value="MedivacBar1"/>
+                <xs:enumeration value="MedivacBar2"/>
+                <xs:enumeration value="MedivacBar3"/>
+                <xs:enumeration value="DepartSecondsLabel"/>
+                <xs:enumeration value="DepartMilliLabel"/>
+                <xs:enumeration value="Pip1Frame"/>
+                <xs:enumeration value="Pip2Frame"/>
+                <xs:enumeration value="Pip3Frame"/>
+                <xs:enumeration value="Pip4Frame"/>
+                <xs:enumeration value="Pip5Frame"/>
+                <xs:enumeration value="ScanLineImage"/>
+                <xs:enumeration value="MedivacBarFillImage"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="side" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Top"/>
+                <xs:enumeration value="Bottom"/>
+                <xs:enumeration value="Left"/>
+                <xs:enumeration value="Right"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="style1" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Storm_MapMechanicStatusBarCannonball"/>
+                <xs:enumeration value="Storm_MineralMadness_MapMechanicCountUnitStatusLarge"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="style2" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Storm_MineralMadness_MapMechanicCountUnitStatusLarge"/>
+                <xs:enumeration value="Storm_MapMechanicStatusBarCannonball"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="dimension" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Height"/>
+                <xs:enumeration value="Width"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="relative" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="False"/>
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="true"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="percentage" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="layer" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="sidelock" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Animation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Event"/>
+        <xs:element ref="Controller"/>
+      </xs:choice>
+<xs:attribute name="name" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Pulse"/>
+                <xs:enumeration value="FadeAnimation"/>
+                <xs:enumeration value="HideStackCountCarryBehavior"/>
+                <xs:enumeration value="MineralTextSizeIncrease"/>
+                <xs:enumeration value="MineralIconScale"/>
+                <xs:enumeration value="MiMaTextReset"/>
+                <xs:enumeration value="ShowGlowAndPulse"/>
+                <xs:enumeration value="HideGlow"/>
+                <xs:enumeration value="Fade"/>
+                <xs:enumeration value="DimmedOn"/>
+                <xs:enumeration value="DimmedOff"/>
+                <xs:enumeration value="ResistantOn"/>
+                <xs:enumeration value="ResistantOff"/>
+                <xs:enumeration value="VulnerableOn"/>
+                <xs:enumeration value="VulnerableOff"/>
+                <xs:enumeration value="ProtectedHealthBarFlashOn"/>
+                <xs:enumeration value="ProtectedHealthBarFlashOff"/>
+                <xs:enumeration value="FlashOn"/>
+                <xs:enumeration value="FlashOff"/>
+                <xs:enumeration value="ShowHideProtectedHealthBar"/>
+                <xs:enumeration value="Recharging"/>
+                <xs:enumeration value="NotRecharging"/>
+                <xs:enumeration value="EnergyFull"/>
+                <xs:enumeration value="ShowHideHardenedFocusIndicator"/>
+                <xs:enumeration value="FlickerOn"/>
+                <xs:enumeration value="Blink"/>
+                <xs:enumeration value="Trigger"/>
+                <xs:enumeration value="ShowMe"/>
+                <xs:enumeration value="Init"/>
+                <xs:enumeration value="Flicker"/>
+                <xs:enumeration value="UVScroll"/>
+                <xs:enumeration value="Rotate"/>
+                <xs:enumeration value="Grow"/>
+                <xs:enumeration value="TestText"/>
+                <xs:enumeration value="Scroll"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="template" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="U"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="/"/>
+                <xs:enumeration value="M"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="d"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="v"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="B"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="p"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="/"/>
+                <xs:enumeration value="F"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="k"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="O"/>
+                <xs:enumeration value="n"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="MyTestDeleteNow">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="6"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="d"/>
+                <xs:enumeration value="f"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Style">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Storm_StatusBarLabel"/>
+                <xs:enumeration value="Storm_UnitStatusLevelLabel"/>
+                <xs:enumeration value="Storm_UnitNameLabel"/>
+                <xs:enumeration value="TalentChoiceAlertNameplateLabel"/>
+                <xs:enumeration value="UnitStatusPositiveArmorHealing"/>
+                <xs:enumeration value="@Storm_MapMechanicStatusBarCannonball"/>
+                <xs:enumeration value="Storm_MapMechanicStatusBarCannonball"/>
+                <xs:enumeration value="Storm_DebugAIStatusLabel"/>
+                <xs:enumeration value="Storm_VitalsLabel_R"/>
+                <xs:enumeration value="Storm_VitalsLabel_R_Small"/>
+                <xs:enumeration value="DeathTimerPlayerName_Right"/>
+                <xs:enumeration value="DeathTimerPlayerName_Left"/>
+                <xs:enumeration value="MapMechanicHealthLabelYourTeam"/>
+                <xs:enumeration value="MapMechanicHealthLabelEnemyTeam"/>
+                <xs:enumeration value="Storm_UnitStatus_CaptureBeaconContested"/>
+                <xs:enumeration value="Storm_MapMechanicHelpButton"/>
+                <xs:enumeration value="MedivacBarDescription"/>
+                <xs:enumeration value="MedivacDeparting"/>
+                <xs:enumeration value="MedivacCountDownSeconds"/>
+                <xs:enumeration value="MedivacCountDownMilli"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BarCount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DisplayFlags">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Health | HealthDoT | HoT"/>
+                <xs:enumeration value="Health | HealthDoT | Shields | ShieldsDoT | HoT"/>
+                <xs:enumeration value="Shields"/>
+                <xs:enumeration value="Shields | ShieldsDoT"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ReductionColor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="#ReductionColor"/>
+                <xs:enumeration value="109, 255, 255"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ColorStyle">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="DoT"/>
+                <xs:enumeration value="HoT"/>
+                <xs:enumeration value="AllWhite"/>
+                <xs:enumeration value="Primary"/>
+                <xs:enumeration value="Shields"/>
+                <xs:enumeration value="ShieldsDoT"/>
+                <xs:enumeration value="StandardEnergy"/>
+                <xs:enumeration value="StandardEnergyGrant"/>
+                <xs:enumeration value="UnitStatusProgressBar"/>
+                <xs:enumeration value="PrimaryLight"/>
+                <xs:enumeration value="AllGray"/>
+                <xs:enumeration value="MineralStackCountGlowColors"/>
+                <xs:enumeration value="BrewEnergy"/>
+                <xs:enumeration value="DeathwingEnergy"/>
+                <xs:enumeration value="FuryEnergy"/>
+                <xs:enumeration value="DivaEnergy"/>
+                <xs:enumeration value="MeatEnergy"/>
+                <xs:enumeration value="RageEnergy"/>
+                <xs:enumeration value="IllusionHealth"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ReductionShown">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="True"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="IncreaseDuration">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="#LifeLossDuration"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="#LifeIncreaseDuration"/>
+                <xs:enumeration value="250"/>
+                <xs:enumeration value="500"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DecreaseDuration">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="#LifeLossDuration"/>
+                <xs:enumeration value="#ShieldLossDuration"/>
+                <xs:enumeration value="250"/>
+                <xs:enumeration value="#LifeIncreaseDuration"/>
+                <xs:enumeration value="#DecreaseDuration_NoReduction"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ApplyToTotal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="SegmentValue">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="250"/>
+                <xs:enumeration value="100"/>
+                <xs:enumeration value="2000"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="25"/>
+                <xs:enumeration value="50"/>
+                <xs:enumeration value="0.2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="SegmentGroupCount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="MaxSegmentCount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="4"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Segmented">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="False"/>
+                <xs:enumeration value="true"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ColorAdjustMode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Desaturate"/>
+                <xs:enumeration value="Colorize"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="LightAdjustColor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="{$parent/MineralGlowColorFrame/@Color}"/>
+                <xs:enumeration value="{$parent/$parent/PrimaryHighlightColorFrame/@Color}"/>
+                <xs:enumeration value="{$GameUI/TeamOrderColors/@Color}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DarkAdjustColor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="000000"/>
+                <xs:enumeration value="{$parent/$parent/PrimaryColorFrame/@Color}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Tiled">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="2"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="AdditionalColorStyle">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="P"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="y"/>
+                <xs:enumeration value="L"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="g"/>
+                <xs:enumeration value="h"/>
+                <xs:enumeration value="t"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="VisibleToOwner">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="{$parent/PlayerUnitNameLabel/@Visible}"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="VisibleToAlly">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="VisibleToEnemy">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ForcedRelation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DisplayPriority">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="name" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="N"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="t"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="NameType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Player"/>
+                <xs:enumeration value="Unit"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="UseNameTypeVisibilityRules">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="false"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="LayerCount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="MinValue">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="20"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="MaxValue">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="20"/>
+                <xs:enumeration value="40"/>
+                <xs:enumeration value="{$parent/@MaxValue}"/>
+                <xs:enumeration value="{$parent/$parent/@PhysicalDurationMax}"/>
+                <xs:enumeration value="{$parent/$parent/@AbilityDurationMax}"/>
+                <xs:enumeration value="{$parent/@DurationMax}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Value">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="{$parent/@Ammo}"/>
+                <xs:enumeration value="{$parent/@CurrentValue}"/>
+                <xs:enumeration value="{$parent/$parent/@PhysicalDurationRemaining}"/>
+                <xs:enumeration value="{$parent/$parent/@AbilityDurationRemaining}"/>
+                <xs:enumeration value="{$parent/@DurationRemaining}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="FillInset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="."/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="UseFillContainer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BlendMode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Add"/>
+                <xs:enumeration value="Normal"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Text">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="{$parent/$parent/@CurrentPhysicalArmor}"/>
+                <xs:enumeration value="{$parent/$parent/@CurrentAbilityArmor}"/>
+                <xs:enumeration value="{$parent/StatusLabelFormatSign/@Text}"/>
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="@UI/CapturePointContested"/>
+                <xs:enumeration value="Bar Label"/>
+                <xs:enumeration value="OK"/>
+                <xs:enumeration value="@UI/Ingame/HeroUI/MedicHudBar1"/>
+                <xs:enumeration value="@UI/Ingame/HeroUI/MedicHudBar2"/>
+                <xs:enumeration value="@UI/Ingame/HeroUI/MedicHudBar3"/>
+                <xs:enumeration value="@UI/Ingame/HeroUI/MedicDepartingIn"/>
+                <xs:enumeration value="@UI/Tooltip/MedicMedivacDropshipAcceptingPassengersCountdown"/>
+                <xs:enumeration value="00"/>
+                <xs:enumeration value="12345"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="VisibilityOnFade">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="F"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Validator">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="TargetIsStasis"/>
+                <xs:enumeration value="TargetIsTimeStopped"/>
+                <xs:enumeration value="ShowInvulnerableNameplate"/>
+                <xs:enumeration value="CasterIsMindControlled"/>
+                <xs:enumeration value="CasterIsAbsorbing"/>
+                <xs:enumeration value="ShowUnstoppableNameplateCombine"/>
+                <xs:enumeration value="TargetIsProtected"/>
+                <xs:enumeration value="CasterIsUnkillable"/>
+                <xs:enumeration value="TargetIsSleeping"/>
+                <xs:enumeration value="TargetIsStunned"/>
+                <xs:enumeration value="TargetIsTaunted"/>
+                <xs:enumeration value="TargetIsFeared"/>
+                <xs:enumeration value="TargetIsRooted"/>
+                <xs:enumeration value="TargetIsPolymorphed"/>
+                <xs:enumeration value="TargetIsSilenced"/>
+                <xs:enumeration value="TargetIsBlinded"/>
+                <xs:enumeration value="MiMaMineralsTargetHasGE40Stacks"/>
+                <xs:enumeration value="MiMaMineralsLT40Combine"/>
+                <xs:enumeration value="TargetNotProtected"/>
+                <xs:enumeration value="ProbiusNearPylonOrOverchargedPylon"/>
+                <xs:enumeration value="ProbiusNotNearPylonAndNotNearOverchargedPylon"/>
+                <xs:enumeration value="EnergyFullCaster"/>
+                <xs:enumeration value="HasHardenedFocusTalent"/>
+                <xs:enumeration value="NoHardenedFocusTalent"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="When">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="AnimationState"/>
+                <xs:enumeration value="Property"/>
+                <xs:enumeration value="StateGroup"/>
+                <xs:enumeration value="Option"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="UnitStatusValidatorState" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="NoState"/>
+                <xs:enumeration value="TargetIsStasis"/>
+                <xs:enumeration value="TargetIsTimeStopped"/>
+                <xs:enumeration value="ShowInvulnerableNameplate"/>
+                <xs:enumeration value="CasterIsAbsorbing"/>
+                <xs:enumeration value="ShowUnstoppableNameplateCombine"/>
+                <xs:enumeration value="CasterIsUnkillable"/>
+                <xs:enumeration value="TargetIsSleeping"/>
+                <xs:enumeration value="TargetIsProtected"/>
+                <xs:enumeration value="TargetIsStunned"/>
+                <xs:enumeration value="TargetIsRooted"/>
+                <xs:enumeration value="TargetIsPolymorphed"/>
+                <xs:enumeration value="CasterIsMindControlled"/>
+                <xs:enumeration value="TargetIsFeared"/>
+                <xs:enumeration value="TargetIsTaunted"/>
+                <xs:enumeration value="TargetIsSilenced"/>
+                <xs:enumeration value="TargetIsBlinded"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="Visible" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="frame" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="StacksFull"/>
+                <xs:enumeration value="$parent/$parent"/>
+                <xs:enumeration value="$parent"/>
+                <xs:enumeration value="$ancestor[@type=GameUI]/UIContainer"/>
+                <xs:enumeration value="CaptureProgressBar"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="PhysicalDurationRemaining" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="operator" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="NotEqual"/>
+                <xs:enumeration value="GreaterThan"/>
+                <xs:enumeration value="LessThan"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="CurrentPhysicalArmor" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="BuffDebuffStates" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Buffed"/>
+                <xs:enumeration value="Debuffed"/>
+                <xs:enumeration value="Neutral"/>
+                <xs:enumeration value="DebuffedMax"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="colorblind" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="true"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="AbilityDurationRemaining" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="ShowAllArmorBuff" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="CurrentAbilityArmor" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="DurationRemaining" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="HealingModification" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="-100"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="SingleStackCarryBehavior" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="IsContested" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="d"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="IsDim" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="D"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="d"/>
+                <xs:enumeration value="O"/>
+                <xs:enumeration value="n"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Action">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="type" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="SetProperty"/>
+                <xs:enumeration value="SetAnchor"/>
+                <xs:enumeration value="SendEvent"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="frame" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="BuffIconLeft"/>
+                <xs:enumeration value="BuffPlateBg"/>
+                <xs:enumeration value="DebuffLabel"/>
+                <xs:enumeration value="DebuffIconLeft"/>
+                <xs:enumeration value="DebuffPlateBg"/>
+                <xs:enumeration value="StacksProgressBar"/>
+                <xs:enumeration value="PermanentDurationBar"/>
+                <xs:enumeration value="FillImageContainer"/>
+                <xs:enumeration value="ArmorLabel"/>
+                <xs:enumeration value="StatusImage"/>
+                <xs:enumeration value="DurationBar/FillImageContainer/FillImage"/>
+                <xs:enumeration value="BackgroundImage"/>
+                <xs:enumeration value="DurationBar"/>
+                <xs:enumeration value="StatusLabel"/>
+                <xs:enumeration value="StatusLabelFormatSign"/>
+                <xs:enumeration value="TextFlareImage"/>
+                <xs:enumeration value="$parent/InvincibleHealthBarFrame"/>
+                <xs:enumeration value="$parent/HealthBarProtected"/>
+                <xs:enumeration value="ContestedBorder"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="texture" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="@UI/State/InvulnerableIcon"/>
+                <xs:enumeration value="@UI/State/StasisIcon"/>
+                <xs:enumeration value="@UI/State/TimeStopIcon"/>
+                <xs:enumeration value="@UI/State/AbsorbingIcon"/>
+                <xs:enumeration value="@UI/State/UnstoppableIcon"/>
+                <xs:enumeration value="@UI/State/UnKillableIcon"/>
+                <xs:enumeration value="@UI/State/SleepingIcon"/>
+                <xs:enumeration value="@UI/State/ProtectedIcon"/>
+                <xs:enumeration value="@UI/State/StunnedIcon"/>
+                <xs:enumeration value="@UI/State/RootedIcon"/>
+                <xs:enumeration value="@UI/State/PolymorphedIcon"/>
+                <xs:enumeration value="@UI/State/MindControlled"/>
+                <xs:enumeration value="@UI/State/FearedIcon"/>
+                <xs:enumeration value="@UI/State/TauntedIcon"/>
+                <xs:enumeration value="@UI/State/SilencedIcon"/>
+                <xs:enumeration value="@UI/State/BlindedIcon"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="color" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="#UnkillableColor"/>
+                <xs:enumeration value="#StasisColor"/>
+                <xs:enumeration value="#TimeStopColor"/>
+                <xs:enumeration value="#InvulnerableColor"/>
+                <xs:enumeration value="#AbsorbingColor"/>
+                <xs:enumeration value="#UnstoppableColor"/>
+                <xs:enumeration value="#SleepingColor"/>
+                <xs:enumeration value="#ProtectedColor"/>
+                <xs:enumeration value="#StunnedColor"/>
+                <xs:enumeration value="#RootedColor"/>
+                <xs:enumeration value="#PolymorphedColor"/>
+                <xs:enumeration value="#MindControlledColor"/>
+                <xs:enumeration value="#FearedColor"/>
+                <xs:enumeration value="#TauntedColor"/>
+                <xs:enumeration value="#SilencedColor"/>
+                <xs:enumeration value="#BlindedColor"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="visible" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="True"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="text" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="@UI/State/Stasis"/>
+                <xs:enumeration value="@UI/State/TimeStop"/>
+                <xs:enumeration value="@UI/State/Invulnerable"/>
+                <xs:enumeration value="@UI/State/Absorbing"/>
+                <xs:enumeration value="@UI/State/Unstoppable"/>
+                <xs:enumeration value="@UI/State/Unkillable"/>
+                <xs:enumeration value="@UI/State/Sleeping"/>
+                <xs:enumeration value="@UI/State/Protected"/>
+                <xs:enumeration value="@UI/State/Stunned"/>
+                <xs:enumeration value="@UI/State/Rooted"/>
+                <xs:enumeration value="@UI/State/Polymorphed"/>
+                <xs:enumeration value="@UI/State/MindControlled"/>
+                <xs:enumeration value="@UI/State/Feared"/>
+                <xs:enumeration value="@UI/State/Taunted"/>
+                <xs:enumeration value="@UI/State/Silenced"/>
+                <xs:enumeration value="@UI/State/Blinded"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="Visible" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="true"/>
+                <xs:enumeration value="false"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="side" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Left"/>
+                <xs:enumeration value="Right"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="relative" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="$"/>
+                <xs:enumeration value="p"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="/"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="I"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="g"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="pos" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Min"/>
+                <xs:enumeration value="Max"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="offset" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="-"/>
+                <xs:enumeration value="3"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="Texture" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="@UI/Storm_UI_Ingame_All_Armor_Icon"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Armor_DurationBar"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_All_Armor_Icon_Negative"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Armor_DurationBar_Negative"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_All_Armor_Icon_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_HUD_Status_Duration_Ring_Buff_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_All_Armor_Icon_Negative_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Armor_DurationBar_Negative_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Ability_Armor_Icon"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Ability_Armor_Icon_Negative"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Ability_Armor_Icon_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Ability_Armor_Icon_Negative_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Physical_Armor_Icon"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Physical_Armor_Icon_Negative"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Physical_Armor_Icon_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_Ingame_Physical_Armor_Icon_Negative_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_InGame_Status_HinderedHealing"/>
+                <xs:enumeration value="@UI/Storm_UI_InGame_Status_HinderedHealing_Negative"/>
+                <xs:enumeration value="@UI/HealingDisplay/None/DurationRing"/>
+                <xs:enumeration value="@UI/Storm_UI_HUD_Status_Icon_Health_Buff_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_InGame_Status_HinderedHealing_CB"/>
+                <xs:enumeration value="@UI/Storm_UI_InGame_Status_HinderedHealing_Negative_CB"/>
+                <xs:enumeration value="@UI/HealingDisplay/None/TextFlareCB"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="style" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="UnitStatusNegativeArmorHealing"/>
+                <xs:enumeration value="UnitStatusNegativeArmorColorblind"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="FormatText" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="%"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="%"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="Style" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="UnitStatusNegativeArmorHealing"/>
+                <xs:enumeration value="UnitStatusNegativeArmorColorblind"/>
+                <xs:enumeration value="UnitStatusNoHealingColorblind"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="event" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="d"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="k"/>
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="y"/>
+                <xs:enumeration value="B"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="h"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="v"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="r"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="State">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="When"/>
+        <xs:element ref="Action"/>
+      </xs:choice>
+<xs:attribute name="name" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="NoState"/>
+                <xs:enumeration value="Stasis"/>
+                <xs:enumeration value="TimeStop"/>
+                <xs:enumeration value="Invulnerable"/>
+                <xs:enumeration value="Absorbing"/>
+                <xs:enumeration value="Unstoppable"/>
+                <xs:enumeration value="Unkillable"/>
+                <xs:enumeration value="Sleeping"/>
+                <xs:enumeration value="Protected"/>
+                <xs:enumeration value="Stunned"/>
+                <xs:enumeration value="Rooted"/>
+                <xs:enumeration value="Polymorphed"/>
+                <xs:enumeration value="MindControlled"/>
+                <xs:enumeration value="Feared"/>
+                <xs:enumeration value="Taunted"/>
+                <xs:enumeration value="Silenced"/>
+                <xs:enumeration value="Blinded"/>
+                <xs:enumeration value="Default"/>
+                <xs:enumeration value="Full"/>
+                <xs:enumeration value="Permanent"/>
+                <xs:enumeration value="Timed"/>
+                <xs:enumeration value="Buffed"/>
+                <xs:enumeration value="Debuffed"/>
+                <xs:enumeration value="ColorblindBuffed"/>
+                <xs:enumeration value="ColorblindDebuffed"/>
+                <xs:enumeration value="Show"/>
+                <xs:enumeration value="DebuffMax"/>
+                <xs:enumeration value="Visible"/>
+                <xs:enumeration value="Hidden"/>
+                <xs:enumeration value="DebuffedMax"/>
+                <xs:enumeration value="Neutral"/>
+                <xs:enumeration value="ColorblindDebuffedMax"/>
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="ShowProtectedBar"/>
+                <xs:enumeration value="Contested"/>
+                <xs:enumeration value="DimmedOn"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="StateGroup">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="State"/>
+        <xs:element ref="DefaultState"/>
+      </xs:choice>
+<xs:attribute name="name" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="DebuffState"/>
+                <xs:enumeration value="HideStackingImage"/>
+                <xs:enumeration value="Visibility"/>
+                <xs:enumeration value="BuffDebuffStates"/>
+                <xs:enumeration value="IconAndTextStates"/>
+                <xs:enumeration value="FlareVisibility"/>
+                <xs:enumeration value="VisibilityStates"/>
+                <xs:enumeration value="SingleStackCarryBehavior"/>
+                <xs:enumeration value="ProtectedVisibleState"/>
+                <xs:enumeration value="IsContested"/>
+                <xs:enumeration value="IsDim"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DefaultState">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Neutral"/>
+                <xs:enumeration value="NoState"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ShowForOwner">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="F"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BehaviorStackOffset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ShowForBehaviorOwner">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DebuffType">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="B"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="h"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="v"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Visible">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="False"/>
+                <xs:enumeration value="{$parent/@ShowAllArmorBuff}"/>
+                <xs:enumeration value="false"/>
+                <xs:enumeration value="{$parent/ContestedBorder/@Visible}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="AcceptsMouse">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="False"/>
+                <xs:enumeration value="true"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Horizontal">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="CollapseLayout">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Circular">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="CircularStart">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="CircularEndOffset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="-"/>
+                <xs:enumeration value="3"/>
+                <xs:enumeration value="6"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="FormatText">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="%"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="%"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Replacement">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="{"/>
+                <xs:enumeration value="$"/>
+                <xs:enumeration value="p"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="/"/>
+                <xs:enumeration value="@"/>
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="g"/>
+                <xs:enumeration value="M"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="d"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="OwnerRenderPriority">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="AllyRenderPriority">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="EnemyRenderPriority">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="5"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Persistent">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BatchGroup">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Behavior">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="HasMapMechanicTargetAbility2"/>
+                <xs:enumeration value="MapMechanicStack"/>
+                <xs:enumeration value="HasMapMechanicInstantAbility1"/>
+                <xs:enumeration value="HasMapMechanicInstantAbility2"/>
+                <xs:enumeration value="HasMapMechanicInstantAbility3"/>
+                <xs:enumeration value="HasMapMechanicInstantAbility4"/>
+                <xs:enumeration value="VehicleGenericHeroInsideUnitTracker"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="MinStackCountDisplayed">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="LayerVisible">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="index" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ImageMaskTexture">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="@UI/StormHeroConsoleCircleButtonMask"/>
+                <xs:enumeration value="@UI/Storm_UI_Medic_MedivacDepart_FilledPip"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ScaleWidthToTexture">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ScoreValueLink">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="d"/>
+                <xs:enumeration value="M"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="h"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="c"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="HideZero">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="File">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="/"/>
+                <xs:enumeration value="G"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="U"/>
+                <xs:enumeration value="I"/>
+                <xs:enumeration value="_"/>
+                <xs:enumeration value="O"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="F"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="N"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="P"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="."/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="C"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="SnapToDevicePixels">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="True"/>
+                <xs:enumeration value="False"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BorderWidth">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="BorderColor">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="255,122,135,154"/>
+                <xs:enumeration value="128,170,170,0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="HeroSpecificLocation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="p"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="k"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="g"/>
+                <xs:enumeration value="B"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="s"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="HookupAlias">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="original" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="k"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="y"/>
+                <xs:enumeration value="F"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="alias" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="S"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="N"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="b"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="L"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="b"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="l"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ShowStatusTooltip">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Announcable">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ShowWhileInvulnerable">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="VisibilityControlledByUnitAlliances">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="s"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ShowPercent">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Expansion">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="L"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="f"/>
+                <xs:enumeration value="t"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="SubpixelRendering">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="TextureCoords">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="top" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value=".4"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="left" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="bottom" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+                <xs:enumeration value=".96"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="right" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="layer" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="NormalImage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="N"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+                <xs:enumeration value="I"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="g"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="HoverImage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="H"/>
+                <xs:enumeration value="o"/>
+                <xs:enumeration value="v"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="I"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="g"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="ClickSound">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="@"/>
+                <xs:enumeration value="U"/>
+                <xs:enumeration value="I"/>
+                <xs:enumeration value="_"/>
+                <xs:enumeration value="G"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="m"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="_"/>
+                <xs:enumeration value="G"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="i"/>
+                <xs:enumeration value="c"/>
+                <xs:enumeration value="_"/>
+                <xs:enumeration value="0"/>
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Tooltip">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="StateCount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="2"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="DescFlags">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="I"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="t"/>
+                <xs:enumeration value="e"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="n"/>
+                <xs:enumeration value="a"/>
+                <xs:enumeration value="l"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="AlphaLayer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="layer" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="0"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="WrapUV">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        
+      </xs:choice>
+<xs:attribute name="val" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="T"/>
+                <xs:enumeration value="r"/>
+                <xs:enumeration value="u"/>
+                <xs:enumeration value="e"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+<xs:attribute name="layer" use="optional">
+        <xs:simpleType>
+          <xs:union memberTypes="xs:string">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:union>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+ <xs:element name="Desc">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Constant"/>
+        <xs:element ref="Frame"/>
+      </xs:choice>
+
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,21 @@
+{"Frame": [
+        "RenderPriority val=#RenderPriority_Background",
+        "Texture val=@UI/StormUnitStatusHealthBarFrame",
+        "LayerColor val=006edf",
+        "TextureType val=Nineslice",
+        {
+            "Animation name='BackgroundColor'": [
+                "Event event=Reset action=Stop",
+                "Event event=UnitStatusOwner action=Stop frame=$parent",
+                "Event event=UnitStatusAlly action=Stop frame=$parent",
+                "Event event=UnitStatusEnemy action=Play frame=$parent",
+                {
+                    "Controller type='LayerColor' end='Pause'": [
+                        "Key type=Curve time=0 value=223,36,0 inout=Linear"
+                    ]
+                }
+            ]
+        },
+        "MyTestDeleteNow val=006edf"
+    ]
+}
