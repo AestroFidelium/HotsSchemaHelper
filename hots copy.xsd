@@ -5,7 +5,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="name" use="optional">
+<xs:attribute name="name" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -38,7 +38,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -294,7 +294,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -315,7 +315,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -401,7 +401,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -525,7 +525,7 @@
         <xs:element ref="AlphaLayer"/>
         <xs:element ref="WrapUV"/>
       </xs:choice>
-<xs:attribute name="type" use="optional">
+<xs:attribute name="type" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -574,7 +574,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="name" use="optional">
+<xs:attribute name="name" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -929,7 +929,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -950,7 +950,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -973,7 +973,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1034,7 +1034,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1113,7 +1113,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1134,7 +1134,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1280,7 +1280,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1310,7 +1310,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1341,7 +1341,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1362,7 +1362,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="event" use="optional">
+<xs:attribute name="event" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1410,7 +1410,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="action" use="optional">
+<xs:attribute name="action" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1430,7 +1430,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="frame" use="optional">
+<xs:attribute name="frame" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1450,7 +1450,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="type" use="optional">
+<xs:attribute name="type" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1464,7 +1464,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="time" use="optional">
+<xs:attribute name="time" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1508,7 +1508,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="value" use="optional">
+<xs:attribute name="value" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1566,7 +1566,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="event" use="optional">
+<xs:attribute name="event" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1619,7 +1619,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element ref="Key"/>
       </xs:choice>
-<xs:attribute name="type" use="optional">
+<xs:attribute name="type" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1652,7 +1652,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="frame" use="optional">
+<xs:attribute name="frame" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1800,7 +1800,7 @@
         <xs:element ref="Event"/>
         <xs:element ref="Controller"/>
       </xs:choice>
-<xs:attribute name="name" use="optional">
+<xs:attribute name="name" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1901,7 +1901,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1924,7 +1924,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1961,7 +1961,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -1982,7 +1982,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2003,7 +2003,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2015,7 +2015,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2034,7 +2034,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2063,7 +2063,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2085,7 +2085,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2098,7 +2098,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2120,7 +2120,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2135,7 +2135,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2157,7 +2157,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2173,7 +2173,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2195,7 +2195,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2208,7 +2208,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2230,7 +2230,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2254,7 +2254,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2272,7 +2272,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2292,7 +2292,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2306,7 +2306,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2328,7 +2328,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2347,7 +2347,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2367,7 +2367,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2386,7 +2386,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2400,7 +2400,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2422,7 +2422,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2444,7 +2444,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2462,7 +2462,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2483,7 +2483,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2503,7 +2503,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2523,7 +2523,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2551,7 +2551,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="name" use="optional">
+<xs:attribute name="name" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2569,7 +2569,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2588,7 +2588,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2607,7 +2607,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2626,7 +2626,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2644,7 +2644,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2663,7 +2663,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2686,7 +2686,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2708,7 +2708,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2728,7 +2728,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2749,7 +2749,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2768,7 +2768,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2799,7 +2799,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2821,7 +2821,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2862,7 +2862,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="type" use="optional">
+<xs:attribute name="type" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2917,7 +2917,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="frame" use="optional">
+<xs:attribute name="frame" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3111,7 +3111,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="type" use="optional">
+<xs:attribute name="type" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3124,7 +3124,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="frame" use="optional">
+<xs:attribute name="frame" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3392,7 +3392,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="event" use="optional">
+<xs:attribute name="event" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3437,7 +3437,7 @@
         <xs:element ref="When"/>
         <xs:element ref="Action"/>
       </xs:choice>
-<xs:attribute name="name" use="optional">
+<xs:attribute name="name" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3491,7 +3491,7 @@
         <xs:element ref="State"/>
         <xs:element ref="DefaultState"/>
       </xs:choice>
-<xs:attribute name="name" use="optional">
+<xs:attribute name="name" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3519,7 +3519,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3538,7 +3538,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3560,7 +3560,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3578,7 +3578,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3599,7 +3599,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3631,7 +3631,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3652,7 +3652,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3671,7 +3671,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3692,7 +3692,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3713,7 +3713,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3734,7 +3734,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3752,7 +3752,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3773,7 +3773,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3793,7 +3793,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3804,7 +3804,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3851,7 +3851,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3871,7 +3871,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3891,7 +3891,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3911,7 +3911,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3932,7 +3932,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3953,7 +3953,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3977,7 +3977,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -3995,7 +3995,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="index" use="optional">
+<xs:attribute name="index" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4006,7 +4006,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4028,7 +4028,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4047,7 +4047,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4068,7 +4068,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4100,7 +4100,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4121,7 +4121,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4184,7 +4184,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4203,7 +4203,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4221,7 +4221,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4240,7 +4240,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4346,7 +4346,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4367,7 +4367,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4388,7 +4388,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4409,7 +4409,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4431,7 +4431,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4452,7 +4452,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4473,7 +4473,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4561,7 +4561,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4589,7 +4589,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4616,7 +4616,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4652,7 +4652,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4670,7 +4670,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4688,7 +4688,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4713,7 +4713,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -4745,7 +4745,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         
       </xs:choice>
-<xs:attribute name="val" use="optional">
+<xs:attribute name="val" use="required">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>

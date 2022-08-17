@@ -81,6 +81,13 @@ XS_ATTRIBUTE = """<xs:attribute name="{}" use="{}">
 XS_ENUMERATION = """<xs:enumeration value="{}"/>"""
 
 
+def tag_install(x):
+    if x in ["name", "val", "type", "value", "frame", "action", "event", "time", "index"]:
+        return "required"
+    else:
+        return "optional"
+    # return "optional", "required"
+
 def main():
     first_tag = Tag(soup.find(BASIC_TAG))
 
@@ -107,7 +114,7 @@ def main():
                 "\n".join([
                     XS_CHOICE.format("\n        ".join(
                         [XS_ELEMENT.format(x.name) for x in h_tag.choice])),
-                    "\n".join([XS_ATTRIBUTE.format(x, "optional", "xs:string", "xs:string", "\n                ".join(
+                    "\n".join([XS_ATTRIBUTE.format(x, tag_install(x), "xs:string", "xs:string", "\n                ".join(
                         [XS_ENUMERATION.format(y) for y in h_tag.params[x]])) for x in h_tag.params])
                 ])
             ))
