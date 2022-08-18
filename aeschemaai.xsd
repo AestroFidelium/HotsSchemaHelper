@@ -6783,6 +6783,8 @@
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element ref="property" />
+        <xs:element ref="insertChild" />
+
       </xs:choice>
       <xs:attribute name="name" use="optional">
         <xs:simpleType>
