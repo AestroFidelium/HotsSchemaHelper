@@ -4,9 +4,10 @@ import collections
 from pprint import pprint
 import os
 
-BASIC_TAG = "Desc"
-soup = bs4.BeautifulSoup(open("data.xml"), "xml")
+BASIC_TAG = "tree"
+# soup = bs4.BeautifulSoup(open("data.xml"), "xml")
 HISTORY_TAGS = []
+
 
 class Tag():
     def __init__(self, soup, parent=None):
@@ -17,7 +18,7 @@ class Tag():
         self.children = []
         self.params = {}
         self.choice = []
-        
+
         if isinstance(self.soup, bs4.NavigableString):
             pass
         else:
@@ -33,7 +34,7 @@ class Tag():
             old_tag = HISTORY_TAGS[HISTORY_TAGS.index(self)]
 
             for par, val in self.args.items():
-                
+
                 if x := old_tag.params.get(par, None):
                     if isinstance(x, list):
                         if val not in x:
@@ -70,6 +71,7 @@ XS_CHOICE = """<xs:choice minOccurs="0" maxOccurs="unbounded">
         {}
       </xs:choice>"""
 XS_ELEMENT = """<xs:element ref="{}"/>"""
+XS_ATTRIBUTE_SIMPLE = """<xs:attribute name="{}" use="{}"/>"""
 
 XS_ATTRIBUTE = """<xs:attribute name="{}" use="{}">
         <xs:simpleType>
@@ -87,20 +89,27 @@ XS_ENUMERATION = """<xs:enumeration value="{}"/>"""
 
 
 def tag_install(x):
-    if x in ["name", "val", "type", "value", "frame", 
-             "action", "event", "time", 
-             "sound", "text", "image", 
-             "Event", "Text", "Value", "path"]:
+    if x in ["name", "val", "type", "value", "frame",
+             "action", "event", "time",
+             "sound", "text", "image",
+             "Event", "Text", "Value", "path", "id", "valueSource", "file"]:
         return "required"
     else:
         print(x)
         return "optional"
-    # return "optional", "required"
+
+
+def ENUMERATION(x):
+    # print(x in ["tag"], x)
+    if x in ["id"]:
+        return True
+    return False
+
 
 def main():
     # print(os.listdir("./layouts/"))
     # quit()
-    for soup in [bs4.BeautifulSoup(open("./layouts/{}".format(a),"r",encoding="utf-8"), "xml") for a in os.listdir("./layouts/")]:
+    for soup in [bs4.BeautifulSoup(open("./aitree/{}".format(a), "r", encoding="utf-8"), "xml") for a in os.listdir("./aitree/")]:
         # print(soup)
         first_tag = Tag(soup.find(BASIC_TAG))
         # print(len(HISTORY_TAGS))
@@ -130,8 +139,8 @@ def main():
                 "\n".join([
                     XS_CHOICE.format("\n        ".join(
                         [XS_ELEMENT.format(x.name) for x in h_tag.choice])),
-                    "\n".join([XS_ATTRIBUTE.format(x, tag_install(x), "xs:string", "xs:string", "\n                ".join(
-                        [XS_ENUMERATION.format(h_tag.params[x]) if isinstance(h_tag.params[x], str) else XS_ENUMERATION.format(y) for y in h_tag.params[x]])) for x in h_tag.params])
+                    "\n".join([XS_ATTRIBUTE_SIMPLE.format(x, tag_install(x)) if ENUMERATION(x) else XS_ATTRIBUTE.format(x, tag_install(x), "xs:string", "xs:string", "\n                ".join([XS_ENUMERATION.format(h_tag.params[x].replace("<", "«").replace(
+                        "&", "§")) if isinstance(h_tag.params[x], str) else XS_ENUMERATION.format(y.replace("<", "«").replace("&", "§")) for y in h_tag.params[x]])) for x in h_tag.params])
                 ])
             ))
 
