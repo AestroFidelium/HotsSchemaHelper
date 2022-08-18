@@ -5823,7 +5823,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -6421,7 +6421,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -23548,7 +23548,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -23648,7 +23648,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -23730,7 +23730,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -23778,7 +23778,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -32228,7 +32228,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -36367,7 +36367,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -37004,7 +37004,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -37284,7 +37284,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -37396,7 +37396,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -37428,7 +37428,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -54836,7 +54836,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -54933,7 +54933,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -55032,7 +55032,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -55913,7 +55913,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -58720,7 +58720,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -59847,7 +59847,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -61101,7 +61101,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -63657,7 +63657,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -63685,7 +63685,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -64302,7 +64302,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -64377,7 +64377,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="layer" use="required">
+      <xs:attribute name="layer" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>

@@ -90,7 +90,7 @@ def tag_install(x):
     if x in ["name", "val", "type", "value", "frame", 
              "action", "event", "time", 
              "sound", "text", "image", 
-             "Event", "Text", "Value", "path", "layer"]:
+             "Event", "Text", "Value", "path"]:
         return "required"
     else:
         print(x)
