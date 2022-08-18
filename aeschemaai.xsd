@@ -67,7 +67,7 @@
           </xs:union>
         </xs:simpleType>
       </xs:attribute>
-      <xs:attribute name="name" use="required">
+      <xs:attribute name="name" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -163,7 +163,7 @@
   <xs:element name="variable">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded"></xs:choice>
-      <xs:attribute name="name" use="required">
+      <xs:attribute name="name" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -2868,7 +2868,7 @@
   <xs:element name="property">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded"></xs:choice>
-      <xs:attribute name="name" use="required">
+      <xs:attribute name="name" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -6784,7 +6784,7 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element ref="property" />
       </xs:choice>
-      <xs:attribute name="name" use="required">
+      <xs:attribute name="name" use="optional">
         <xs:simpleType>
           <xs:union memberTypes="xs:string">
             <xs:simpleType>
@@ -13301,4 +13301,6 @@
       </xs:attribute>
     </xs:complexType>
   </xs:element>
+
+
 </xs:schema>
