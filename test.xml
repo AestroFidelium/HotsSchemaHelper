@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Desc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hots copy.xsd">
-    <Frame type="Label" name="UnitStatusBarTemplate">
-        
-    </Frame>
+<Desc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="aeschema.xsd">
+    
 </Desc>

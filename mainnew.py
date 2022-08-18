@@ -2,7 +2,7 @@ import bs4
 import re
 import collections
 from pprint import pprint
-
+import os
 
 BASIC_TAG = "Desc"
 soup = bs4.BeautifulSoup(open("data.xml"), "xml")
@@ -17,10 +17,15 @@ class Tag():
         self.children = []
         self.params = {}
         self.choice = []
-        for child in self.soup.children:
-            if child == "\n":
-                continue
-            self.children.append(Tag(child, self))
+        
+        if isinstance(self.soup, bs4.NavigableString):
+            pass
+        else:
+            if self.soup.children:
+                for child in self.soup.children:
+                    if child == "\n":
+                        continue
+                    self.children.append(Tag(child, self))
 
         if self not in HISTORY_TAGS:
             HISTORY_TAGS.append(self)
@@ -82,14 +87,25 @@ XS_ENUMERATION = """<xs:enumeration value="{}"/>"""
 
 
 def tag_install(x):
-    if x in ["name", "val", "type", "value", "frame", "action", "event", "time", "index"]:
+    if x in ["name", "val", "type", "value", "frame", 
+             "action", "event", "time", 
+             "sound", "text", "image", 
+             "Event", "Text", "Value", "path", "layer"]:
         return "required"
     else:
+        print(x)
         return "optional"
     # return "optional", "required"
 
 def main():
-    first_tag = Tag(soup.find(BASIC_TAG))
+    # print(os.listdir("./layouts/"))
+    # quit()
+    for soup in [bs4.BeautifulSoup(open("./layouts/{}".format(a),"r",encoding="utf-8"), "xml") for a in os.listdir("./layouts/")]:
+        # print(soup)
+        first_tag = Tag(soup.find(BASIC_TAG))
+        # print(len(HISTORY_TAGS))
+    # print(bs4.BeautifulSoup(open("./layouts/abathur.stormlayout", "r",encoding="utf-8"), "xml"))
+    # quit()
 
     for h_tag in HISTORY_TAGS:
         if h_tag.params == {}:
@@ -115,7 +131,7 @@ def main():
                     XS_CHOICE.format("\n        ".join(
                         [XS_ELEMENT.format(x.name) for x in h_tag.choice])),
                     "\n".join([XS_ATTRIBUTE.format(x, tag_install(x), "xs:string", "xs:string", "\n                ".join(
-                        [XS_ENUMERATION.format(y) for y in h_tag.params[x]])) for x in h_tag.params])
+                        [XS_ENUMERATION.format(h_tag.params[x]) if isinstance(h_tag.params[x], str) else XS_ENUMERATION.format(y) for y in h_tag.params[x]])) for x in h_tag.params])
                 ])
             ))
 
