@@ -89,7 +89,7 @@ XS_ENUMERATION = """<xs:enumeration value="{}"/>"""
 
 
 def tag_install(x):
-    if x in ["name", "val", "type", "value", "frame",
+    if x in [ "val", "type", "value", "frame",
              "action", "event", "time",
              "sound", "text", "image",
              "Event", "Text", "Value", "path", "id", "valueSource", "file"]:
@@ -109,8 +109,8 @@ def ENUMERATION(x):
 def main():
     # print(os.listdir("./layouts/"))
     # quit()
+    
     for soup in [bs4.BeautifulSoup(open("./aitree/{}".format(a), "r", encoding="utf-8"), "xml") for a in os.listdir("./aitree/")]:
-        # print(soup)
         first_tag = Tag(soup.find(BASIC_TAG))
         # print(len(HISTORY_TAGS))
     # print(bs4.BeautifulSoup(open("./layouts/abathur.stormlayout", "r",encoding="utf-8"), "xml"))
